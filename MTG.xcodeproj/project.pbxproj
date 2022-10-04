@@ -56,23 +56,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC20BF1528C54CDC004079EF /* MGTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC20BF1528C54CDC004079EF /* MTGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC20BF1828C54CDC004079EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC20BF1C28C54CDC004079EF /* MTSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSearchViewController.swift; sourceTree = "<group>"; };
 		EC20BF1F28C54CDC004079EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC20BF2128C54CDE004079EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC20BF2428C54CDE004079EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC20BF2628C54CDE004079EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC20BF2B28C54CDE004079EF /* MGTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC20BF2B28C54CDE004079EF /* MTGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC20BF2F28C54CDE004079EF /* MGTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGTTests.swift; sourceTree = "<group>"; };
-		EC20BF3528C54CDF004079EF /* MGTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC20BF3528C54CDF004079EF /* MTGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC20BF3928C54CDF004079EF /* MGTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGTUITests.swift; sourceTree = "<group>"; };
 		EC20BF3B28C54CDF004079EF /* MGTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGTUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EC20BF4C28C79112004079EF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		EC20BF4F28C79215004079EF /* MTCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCoordinator.swift; sourceTree = "<group>"; };
 		EC61D8C928EB832D00719351 /* MTCardGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCardGalleryViewController.swift; sourceTree = "<group>"; };
-		EC61D8DF28EB83BD00719351 /* MGTApp-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MGTApp-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC61D8E028EB83BD00719351 /* MGTApp-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MGTApp-Dev.plist"; path = "/Users/agustinch/Desktop/Proyectos swift/MGT/MGTApp-Dev.plist"; sourceTree = "<absolute>"; };
+		EC61D8DF28EB83BD00719351 /* MTGApp-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTGApp-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC61D8E028EB83BD00719351 /* MTGApp-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTGApp-Dev.plist"; sourceTree = "<group>"; };
 		EC61D8E328EBB0DF00719351 /* MTCardGalleryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCardGalleryCoordinator.swift; sourceTree = "<group>"; };
 		EC61D8E628EBB4B200719351 /* MTSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSearchViewModel.swift; sourceTree = "<group>"; };
 		EC89B75128CC9763002D6A6E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -116,26 +116,26 @@
 		EC20BF0C28C54CDC004079EF = {
 			isa = PBXGroup;
 			children = (
-				EC20BF1728C54CDC004079EF /* MGT */,
+				EC20BF1728C54CDC004079EF /* MTG */,
 				EC20BF2E28C54CDE004079EF /* MGTTests */,
 				EC20BF3828C54CDF004079EF /* MGTUITests */,
 				EC20BF1628C54CDC004079EF /* Products */,
-				EC61D8E028EB83BD00719351 /* MGTApp-Dev.plist */,
+				EC61D8E028EB83BD00719351 /* MTGApp-Dev.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		EC20BF1628C54CDC004079EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC20BF1528C54CDC004079EF /* MGTApp.app */,
-				EC20BF2B28C54CDE004079EF /* MGTTests.xctest */,
-				EC20BF3528C54CDF004079EF /* MGTUITests.xctest */,
-				EC61D8DF28EB83BD00719351 /* MGTApp-dev.app */,
+				EC20BF1528C54CDC004079EF /* MTGApp.app */,
+				EC20BF2B28C54CDE004079EF /* MTGTests.xctest */,
+				EC20BF3528C54CDF004079EF /* MTGUITests.xctest */,
+				EC61D8DF28EB83BD00719351 /* MTGApp-dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC20BF1728C54CDC004079EF /* MGT */ = {
+		EC20BF1728C54CDC004079EF /* MTG */ = {
 			isa = PBXGroup;
 			children = (
 				EC61D8E128EBAFF000719351 /* Modules */,
@@ -147,7 +147,7 @@
 				EC20BF2328C54CDE004079EF /* LaunchScreen.storyboard */,
 				EC20BF2628C54CDE004079EF /* Info.plist */,
 			);
-			path = MGT;
+			path = MTG;
 			sourceTree = "<group>";
 		};
 		EC20BF2E28C54CDE004079EF /* MGTTests */ = {
@@ -223,9 +223,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EC20BF1428C54CDC004079EF /* MGTApp */ = {
+		EC20BF1428C54CDC004079EF /* MTGApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC20BF3F28C54CDF004079EF /* Build configuration list for PBXNativeTarget "MGTApp" */;
+			buildConfigurationList = EC20BF3F28C54CDF004079EF /* Build configuration list for PBXNativeTarget "MTGApp" */;
 			buildPhases = (
 				EC20BF1128C54CDC004079EF /* Sources */,
 				EC20BF1228C54CDC004079EF /* Frameworks */,
@@ -235,17 +235,17 @@
 			);
 			dependencies = (
 			);
-			name = MGTApp;
+			name = MTGApp;
 			packageProductDependencies = (
 				EC20BF4928C78C4A004079EF /* Alamofire */,
 			);
 			productName = MGT;
-			productReference = EC20BF1528C54CDC004079EF /* MGTApp.app */;
+			productReference = EC20BF1528C54CDC004079EF /* MTGApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EC20BF2A28C54CDE004079EF /* MGTTests */ = {
+		EC20BF2A28C54CDE004079EF /* MTGTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC20BF4228C54CDF004079EF /* Build configuration list for PBXNativeTarget "MGTTests" */;
+			buildConfigurationList = EC20BF4228C54CDF004079EF /* Build configuration list for PBXNativeTarget "MTGTests" */;
 			buildPhases = (
 				EC20BF2728C54CDE004079EF /* Sources */,
 				EC20BF2828C54CDE004079EF /* Frameworks */,
@@ -256,14 +256,14 @@
 			dependencies = (
 				EC20BF2D28C54CDE004079EF /* PBXTargetDependency */,
 			);
-			name = MGTTests;
+			name = MTGTests;
 			productName = MGTTests;
-			productReference = EC20BF2B28C54CDE004079EF /* MGTTests.xctest */;
+			productReference = EC20BF2B28C54CDE004079EF /* MTGTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EC20BF3428C54CDE004079EF /* MGTUITests */ = {
+		EC20BF3428C54CDE004079EF /* MTGUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC20BF4528C54CDF004079EF /* Build configuration list for PBXNativeTarget "MGTUITests" */;
+			buildConfigurationList = EC20BF4528C54CDF004079EF /* Build configuration list for PBXNativeTarget "MTGUITests" */;
 			buildPhases = (
 				EC20BF3128C54CDE004079EF /* Sources */,
 				EC20BF3228C54CDE004079EF /* Frameworks */,
@@ -274,14 +274,14 @@
 			dependencies = (
 				EC20BF3728C54CDF004079EF /* PBXTargetDependency */,
 			);
-			name = MGTUITests;
+			name = MTGUITests;
 			productName = MGTUITests;
-			productReference = EC20BF3528C54CDF004079EF /* MGTUITests.xctest */;
+			productReference = EC20BF3528C54CDF004079EF /* MTGUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		EC61D8CB28EB83BD00719351 /* MGTApp-dev */ = {
+		EC61D8CB28EB83BD00719351 /* MTGApp-dev */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC61D8DC28EB83BD00719351 /* Build configuration list for PBXNativeTarget "MGTApp-dev" */;
+			buildConfigurationList = EC61D8DC28EB83BD00719351 /* Build configuration list for PBXNativeTarget "MTGApp-dev" */;
 			buildPhases = (
 				EC61D8CE28EB83BD00719351 /* Sources */,
 				EC61D8D628EB83BD00719351 /* Frameworks */,
@@ -291,12 +291,12 @@
 			);
 			dependencies = (
 			);
-			name = "MGTApp-dev";
+			name = "MTGApp-dev";
 			packageProductDependencies = (
 				EC61D8CC28EB83BD00719351 /* Alamofire */,
 			);
 			productName = MGT;
-			productReference = EC61D8DF28EB83BD00719351 /* MGTApp-dev.app */;
+			productReference = EC61D8DF28EB83BD00719351 /* MTGApp-dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -322,7 +322,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EC20BF1028C54CDC004079EF /* Build configuration list for PBXProject "MGT" */;
+			buildConfigurationList = EC20BF1028C54CDC004079EF /* Build configuration list for PBXProject "MTG" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -338,10 +338,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC20BF1428C54CDC004079EF /* MGTApp */,
-				EC61D8CB28EB83BD00719351 /* MGTApp-dev */,
-				EC20BF2A28C54CDE004079EF /* MGTTests */,
-				EC20BF3428C54CDE004079EF /* MGTUITests */,
+				EC20BF1428C54CDC004079EF /* MTGApp */,
+				EC61D8CB28EB83BD00719351 /* MTGApp-dev */,
+				EC20BF2A28C54CDE004079EF /* MTGTests */,
+				EC20BF3428C54CDE004079EF /* MTGUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -438,12 +438,12 @@
 /* Begin PBXTargetDependency section */
 		EC20BF2D28C54CDE004079EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC20BF1428C54CDC004079EF /* MGTApp */;
+			target = EC20BF1428C54CDC004079EF /* MTGApp */;
 			targetProxy = EC20BF2C28C54CDE004079EF /* PBXContainerItemProxy */;
 		};
 		EC20BF3728C54CDF004079EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC20BF1428C54CDC004079EF /* MGTApp */;
+			target = EC20BF1428C54CDC004079EF /* MTGApp */;
 			targetProxy = EC20BF3628C54CDF004079EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -651,7 +651,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MGT.app/MGT";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTG.app/MTG";
 			};
 			name = Debug;
 		};
@@ -670,7 +670,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MGT.app/MGT";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTG.app/MTG";
 			};
 			name = Release;
 		};
@@ -716,7 +716,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MGTApp-Dev.plist";
+				INFOPLIST_FILE = "MTGApp-Dev.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -744,7 +744,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MGTApp-Dev.plist";
+				INFOPLIST_FILE = "MTGApp-Dev.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -767,7 +767,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC20BF1028C54CDC004079EF /* Build configuration list for PBXProject "MGT" */ = {
+		EC20BF1028C54CDC004079EF /* Build configuration list for PBXProject "MTG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC20BF3D28C54CDF004079EF /* Debug */,
@@ -776,7 +776,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC20BF3F28C54CDF004079EF /* Build configuration list for PBXNativeTarget "MGTApp" */ = {
+		EC20BF3F28C54CDF004079EF /* Build configuration list for PBXNativeTarget "MTGApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC20BF4028C54CDF004079EF /* Debug */,
@@ -785,7 +785,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC20BF4228C54CDF004079EF /* Build configuration list for PBXNativeTarget "MGTTests" */ = {
+		EC20BF4228C54CDF004079EF /* Build configuration list for PBXNativeTarget "MTGTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC20BF4328C54CDF004079EF /* Debug */,
@@ -794,7 +794,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC20BF4528C54CDF004079EF /* Build configuration list for PBXNativeTarget "MGTUITests" */ = {
+		EC20BF4528C54CDF004079EF /* Build configuration list for PBXNativeTarget "MTGUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC20BF4628C54CDF004079EF /* Debug */,
@@ -803,7 +803,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC61D8DC28EB83BD00719351 /* Build configuration list for PBXNativeTarget "MGTApp-dev" */ = {
+		EC61D8DC28EB83BD00719351 /* Build configuration list for PBXNativeTarget "MTGApp-dev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC61D8DD28EB83BD00719351 /* Debug */,

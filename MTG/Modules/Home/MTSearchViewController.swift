@@ -8,11 +8,11 @@
 import UIKit
 
 
-class MTSearchViewController: UIViewController {
+class SearchViewController: UIViewController {
     
     // MARK: Private Properties
 
-    private let viewModel: MTSearchViewModelProtocol
+    private let viewModel: SearchViewModelProtocol
     
     // MARK: UI Components
     
@@ -49,7 +49,7 @@ class MTSearchViewController: UIViewController {
     
     // MARK: Initializers
 
-    init(viewModel: MTSearchViewModelProtocol) {
+    init(viewModel: SearchViewModelProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

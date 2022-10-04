@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class MTCoordinator: CoordinatorProtocol {
+final class Coordinator: CoordinatorProtocol {
     
     // MARK: Properties
     
@@ -25,14 +25,14 @@ final class MTCoordinator: CoordinatorProtocol {
     // MARK: Coordinator Conformance
     
     func start() {
-        let viewModel = MTSearchViewModel()
+        let viewModel = SearchViewModel()
         viewModel.appCoordinator = self
-        let viewController = MTSearchViewController(viewModel:viewModel)
+        let viewController = SearchViewController(viewModel:viewModel)
         navigationController.pushViewController(viewController, animated: false)
     }
     
     func goToCardGallery(cardName:String){
-        let cardGalleryCoordinator = MTCardGalleryCoordinator.init(navigationController: navigationController)
+        let cardGalleryCoordinator = CardGalleryCoordinator.init(navigationController: navigationController)
         cardGalleryCoordinator.parentCoordinator = self
         cardGalleryCoordinator.cardName = cardName
         cardGalleryCoordinator.start()

@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC20BF1428C54CDC004079EF"
                BuildableName = "MGTApp.app"
-               BlueprintName = "MGTApp"
-               ReferencedContainer = "container:MGT.xcodeproj">
+               BlueprintName = "MTGApp"
+               ReferencedContainer = "container:MTG.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC20BF2A28C54CDE004079EF"
                BuildableName = "MGTTests.xctest"
-               BlueprintName = "MGTTests"
-               ReferencedContainer = "container:MGT.xcodeproj">
+               BlueprintName = "MTGTests"
+               ReferencedContainer = "container:MTG.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -44,8 +44,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC20BF3428C54CDE004079EF"
                BuildableName = "MGTUITests.xctest"
-               BlueprintName = "MGTUITests"
-               ReferencedContainer = "container:MGT.xcodeproj">
+               BlueprintName = "MTGUITests"
+               ReferencedContainer = "container:MTG.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -66,8 +66,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC20BF1428C54CDC004079EF"
             BuildableName = "MGTApp.app"
-            BlueprintName = "MGTApp"
-            ReferencedContainer = "container:MGT.xcodeproj">
+            BlueprintName = "MTGApp"
+            ReferencedContainer = "container:MTG.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -83,8 +83,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC20BF1428C54CDC004079EF"
             BuildableName = "MGTApp.app"
-            BlueprintName = "MGTApp"
-            ReferencedContainer = "container:MGT.xcodeproj">
+            BlueprintName = "MTGApp"
+            ReferencedContainer = "container:MTG.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

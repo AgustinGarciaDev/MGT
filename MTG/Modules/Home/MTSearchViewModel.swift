@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol MTSearchViewModelProtocol: AnyObject {
+protocol SearchViewModelProtocol: AnyObject {
     func goToSearchCard(nameCard:String)
 }
 
-class MTSearchViewModel: MTSearchViewModelProtocol {
+class SearchViewModel: SearchViewModelProtocol {
     
-    weak var appCoordinator: MTCoordinator!
+    weak var appCoordinator: Coordinator!
 
     func goToSearchCard(nameCard: String) {
         appCoordinator.goToCardGallery(cardName: nameCard)

@@ -11,7 +11,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var coordinator: MTCoordinator?
+    var coordinator: Coordinator?
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let navigationController = UINavigationController()
 
-        coordinator = MTCoordinator(navigationController: navigationController)
+        coordinator = Coordinator(navigationController: navigationController)
         coordinator?.start()
 
         window = UIWindow()
