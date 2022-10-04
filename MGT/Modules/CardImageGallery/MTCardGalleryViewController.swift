@@ -1,19 +1,17 @@
 //
-//  ViewController.swift
+//  MTCardImageGalleryViewController.swift
 //  MGT
 //
-//  Created by Agustinch on 04/09/2022.
+//  Created by Agustinch on 03/10/2022.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MTCardGalleryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
-
 }
-
