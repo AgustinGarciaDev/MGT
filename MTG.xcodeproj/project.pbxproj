@@ -7,33 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC1AF08028ECEAE400401D74 /* CardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF07F28ECEAE400401D74 /* CardsDataModel.swift */; };
+		EC1AF08128ECEAE400401D74 /* CardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF07F28ECEAE400401D74 /* CardsDataModel.swift */; };
+		EC1AF08528ECEB2C00401D74 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF08428ECEB2C00401D74 /* CardModel.swift */; };
+		EC1AF08628ECEB2C00401D74 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF08428ECEB2C00401D74 /* CardModel.swift */; };
 		EC20BF1928C54CDC004079EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF1828C54CDC004079EF /* AppDelegate.swift */; };
-		EC20BF1D28C54CDC004079EF /* MTSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF1C28C54CDC004079EF /* MTSearchViewController.swift */; };
-		EC20BF2028C54CDC004079EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC20BF1E28C54CDC004079EF /* Main.storyboard */; };
+		EC20BF1D28C54CDC004079EF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF1C28C54CDC004079EF /* SearchViewController.swift */; };
 		EC20BF2228C54CDE004079EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC20BF2128C54CDE004079EF /* Assets.xcassets */; };
 		EC20BF2528C54CDE004079EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC20BF2328C54CDE004079EF /* LaunchScreen.storyboard */; };
 		EC20BF3028C54CDE004079EF /* MGTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF2F28C54CDE004079EF /* MGTTests.swift */; };
 		EC20BF3A28C54CDF004079EF /* MGTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF3928C54CDF004079EF /* MGTUITests.swift */; };
 		EC20BF3C28C54CDF004079EF /* MGTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF3B28C54CDF004079EF /* MGTUITestsLaunchTests.swift */; };
 		EC20BF4A28C78C4A004079EF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EC20BF4928C78C4A004079EF /* Alamofire */; };
-		EC20BF4D28C79112004079EF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF4C28C79112004079EF /* Coordinator.swift */; };
-		EC20BF5028C79215004079EF /* MTCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF4F28C79215004079EF /* MTCoordinator.swift */; };
-		EC61D8CA28EB832D00719351 /* MTCardGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8C928EB832D00719351 /* MTCardGalleryViewController.swift */; };
-		EC61D8CF28EB83BD00719351 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF4C28C79112004079EF /* Coordinator.swift */; };
-		EC61D8D028EB83BD00719351 /* MTCardGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8C928EB832D00719351 /* MTCardGalleryViewController.swift */; };
-		EC61D8D128EB83BD00719351 /* MTCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF4F28C79215004079EF /* MTCoordinator.swift */; };
-		EC61D8D228EB83BD00719351 /* MTSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF1C28C54CDC004079EF /* MTSearchViewController.swift */; };
+		EC20BF4D28C79112004079EF /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF4C28C79112004079EF /* CoordinatorProtocol.swift */; };
+		EC20BF5028C79215004079EF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF4F28C79215004079EF /* Coordinator.swift */; };
+		EC61D8CA28EB832D00719351 /* CardGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8C928EB832D00719351 /* CardGalleryViewController.swift */; };
+		EC61D8CF28EB83BD00719351 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF4C28C79112004079EF /* CoordinatorProtocol.swift */; };
+		EC61D8D028EB83BD00719351 /* CardGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8C928EB832D00719351 /* CardGalleryViewController.swift */; };
+		EC61D8D128EB83BD00719351 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF4F28C79215004079EF /* Coordinator.swift */; };
+		EC61D8D228EB83BD00719351 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF1C28C54CDC004079EF /* SearchViewController.swift */; };
 		EC61D8D328EB83BD00719351 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC89B75328CCB0AE002D6A6E /* UITextField+Extension.swift */; };
 		EC61D8D428EB83BD00719351 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC89B75128CC9763002D6A6E /* UIViewController+Extension.swift */; };
 		EC61D8D528EB83BD00719351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF1828C54CDC004079EF /* AppDelegate.swift */; };
 		EC61D8D728EB83BD00719351 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EC61D8CC28EB83BD00719351 /* Alamofire */; };
 		EC61D8D928EB83BD00719351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC20BF2328C54CDE004079EF /* LaunchScreen.storyboard */; };
 		EC61D8DA28EB83BD00719351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC20BF2128C54CDE004079EF /* Assets.xcassets */; };
-		EC61D8DB28EB83BD00719351 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC20BF1E28C54CDC004079EF /* Main.storyboard */; };
-		EC61D8E428EBB0DF00719351 /* MTCardGalleryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8E328EBB0DF00719351 /* MTCardGalleryCoordinator.swift */; };
-		EC61D8E528EBB19700719351 /* MTCardGalleryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8E328EBB0DF00719351 /* MTCardGalleryCoordinator.swift */; };
-		EC61D8E728EBB4B200719351 /* MTSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8E628EBB4B200719351 /* MTSearchViewModel.swift */; };
-		EC61D8E828EBB4B200719351 /* MTSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8E628EBB4B200719351 /* MTSearchViewModel.swift */; };
+		EC61D8E428EBB0DF00719351 /* CardGalleryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8E328EBB0DF00719351 /* CardGalleryCoordinator.swift */; };
+		EC61D8E528EBB19700719351 /* CardGalleryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8E328EBB0DF00719351 /* CardGalleryCoordinator.swift */; };
+		EC61D8E728EBB4B200719351 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8E628EBB4B200719351 /* SearchViewModel.swift */; };
+		EC61D8E828EBB4B200719351 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8E628EBB4B200719351 /* SearchViewModel.swift */; };
+		EC61D8F328ECDC6B00719351 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8EE28ECDC6A00719351 /* TargetType.swift */; };
+		EC61D8F428ECDC6B00719351 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8EE28ECDC6A00719351 /* TargetType.swift */; };
+		EC61D8F528ECDC6B00719351 /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8EF28ECDC6A00719351 /* BaseApi.swift */; };
+		EC61D8F628ECDC6B00719351 /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8EF28ECDC6A00719351 /* BaseApi.swift */; };
+		EC61D8F728ECDC6B00719351 /* RepositoryNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8F128ECDC6A00719351 /* RepositoryNetwork.swift */; };
+		EC61D8F828ECDC6B00719351 /* RepositoryNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8F128ECDC6A00719351 /* RepositoryNetwork.swift */; };
+		EC61D8F928ECDC6B00719351 /* RepositoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8F228ECDC6A00719351 /* RepositoryAPI.swift */; };
+		EC61D8FA28ECDC6B00719351 /* RepositoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8F228ECDC6A00719351 /* RepositoryAPI.swift */; };
 		EC89B75228CC9763002D6A6E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC89B75128CC9763002D6A6E /* UIViewController+Extension.swift */; };
 		EC89B75428CCB0AE002D6A6E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC89B75328CCB0AE002D6A6E /* UITextField+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -56,10 +66,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC1AF07F28ECEAE400401D74 /* CardsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDataModel.swift; sourceTree = "<group>"; };
+		EC1AF08428ECEB2C00401D74 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		EC20BF1528C54CDC004079EF /* MTGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC20BF1828C54CDC004079EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC20BF1C28C54CDC004079EF /* MTSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSearchViewController.swift; sourceTree = "<group>"; };
-		EC20BF1F28C54CDC004079EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC20BF1C28C54CDC004079EF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		EC20BF2128C54CDE004079EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC20BF2428C54CDE004079EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC20BF2628C54CDE004079EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,13 +79,17 @@
 		EC20BF3528C54CDF004079EF /* MTGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC20BF3928C54CDF004079EF /* MGTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGTUITests.swift; sourceTree = "<group>"; };
 		EC20BF3B28C54CDF004079EF /* MGTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGTUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EC20BF4C28C79112004079EF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		EC20BF4F28C79215004079EF /* MTCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCoordinator.swift; sourceTree = "<group>"; };
-		EC61D8C928EB832D00719351 /* MTCardGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCardGalleryViewController.swift; sourceTree = "<group>"; };
+		EC20BF4C28C79112004079EF /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		EC20BF4F28C79215004079EF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EC61D8C928EB832D00719351 /* CardGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGalleryViewController.swift; sourceTree = "<group>"; };
 		EC61D8DF28EB83BD00719351 /* MTGApp-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTGApp-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC61D8E028EB83BD00719351 /* MTGApp-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTGApp-Dev.plist"; sourceTree = "<group>"; };
-		EC61D8E328EBB0DF00719351 /* MTCardGalleryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCardGalleryCoordinator.swift; sourceTree = "<group>"; };
-		EC61D8E628EBB4B200719351 /* MTSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSearchViewModel.swift; sourceTree = "<group>"; };
+		EC61D8E328EBB0DF00719351 /* CardGalleryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGalleryCoordinator.swift; sourceTree = "<group>"; };
+		EC61D8E628EBB4B200719351 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		EC61D8EE28ECDC6A00719351 /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		EC61D8EF28ECDC6A00719351 /* BaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
+		EC61D8F128ECDC6A00719351 /* RepositoryNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryNetwork.swift; sourceTree = "<group>"; };
+		EC61D8F228ECDC6A00719351 /* RepositoryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryAPI.swift; sourceTree = "<group>"; };
 		EC89B75128CC9763002D6A6E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		EC89B75328CCB0AE002D6A6E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +128,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC1AF07E28ECEAC900401D74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC1AF07F28ECEAE400401D74 /* CardsDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC1AF08228ECEB1500401D74 /* ShowCard */ = {
+			isa = PBXGroup;
+			children = (
+				EC1AF08328ECEB1F00401D74 /* Model */,
+			);
+			path = ShowCard;
+			sourceTree = "<group>";
+		};
+		EC1AF08328ECEB1F00401D74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC1AF08428ECEB2C00401D74 /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EC20BF0C28C54CDC004079EF = {
 			isa = PBXGroup;
 			children = (
@@ -138,11 +177,11 @@
 		EC20BF1728C54CDC004079EF /* MTG */ = {
 			isa = PBXGroup;
 			children = (
-				EC61D8E128EBAFF000719351 /* Modules */,
+				EC61D8EC28ECDA8800719351 /* Network */,
 				EC20BF4E28C791FB004079EF /* Coordinators */,
+				EC61D8E128EBAFF000719351 /* Modules */,
 				EC20BF4B28C790F4004079EF /* Commos */,
 				EC20BF1828C54CDC004079EF /* AppDelegate.swift */,
-				EC20BF1E28C54CDC004079EF /* Main.storyboard */,
 				EC20BF2128C54CDE004079EF /* Assets.xcassets */,
 				EC20BF2328C54CDE004079EF /* LaunchScreen.storyboard */,
 				EC20BF2628C54CDE004079EF /* Info.plist */,
@@ -170,7 +209,7 @@
 		EC20BF4B28C790F4004079EF /* Commos */ = {
 			isa = PBXGroup;
 			children = (
-				EC20BF4C28C79112004079EF /* Coordinator.swift */,
+				EC20BF4C28C79112004079EF /* CoordinatorProtocol.swift */,
 				EC89B75128CC9763002D6A6E /* UIViewController+Extension.swift */,
 				EC89B75328CCB0AE002D6A6E /* UITextField+Extension.swift */,
 			);
@@ -180,7 +219,7 @@
 		EC20BF4E28C791FB004079EF /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				EC20BF4F28C79215004079EF /* MTCoordinator.swift */,
+				EC20BF4F28C79215004079EF /* Coordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -188,8 +227,8 @@
 		EC61D8C728EB82CC00719351 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				EC20BF1C28C54CDC004079EF /* MTSearchViewController.swift */,
-				EC61D8E628EBB4B200719351 /* MTSearchViewModel.swift */,
+				EC20BF1C28C54CDC004079EF /* SearchViewController.swift */,
+				EC61D8E628EBB4B200719351 /* SearchViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -197,8 +236,9 @@
 		EC61D8C828EB82F200719351 /* CardImageGallery */ = {
 			isa = PBXGroup;
 			children = (
+				EC1AF07E28ECEAC900401D74 /* Model */,
 				EC61D8E228EBB06800719351 /* Coordinator */,
-				EC61D8C928EB832D00719351 /* MTCardGalleryViewController.swift */,
+				EC61D8C928EB832D00719351 /* CardGalleryViewController.swift */,
 			);
 			path = CardImageGallery;
 			sourceTree = "<group>";
@@ -206,6 +246,7 @@
 		EC61D8E128EBAFF000719351 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EC1AF08228ECEB1500401D74 /* ShowCard */,
 				EC61D8C728EB82CC00719351 /* Home */,
 				EC61D8C828EB82F200719351 /* CardImageGallery */,
 			);
@@ -215,9 +256,36 @@
 		EC61D8E228EBB06800719351 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				EC61D8E328EBB0DF00719351 /* MTCardGalleryCoordinator.swift */,
+				EC61D8E328EBB0DF00719351 /* CardGalleryCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EC61D8EC28ECDA8800719351 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC61D8ED28ECDC6A00719351 /* Base Network */,
+				EC61D8F028ECDC6A00719351 /* Repository */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EC61D8ED28ECDC6A00719351 /* Base Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC61D8EE28ECDC6A00719351 /* TargetType.swift */,
+				EC61D8EF28ECDC6A00719351 /* BaseApi.swift */,
+			);
+			path = "Base Network";
+			sourceTree = "<group>";
+		};
+		EC61D8F028ECDC6A00719351 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EC61D8F128ECDC6A00719351 /* RepositoryNetwork.swift */,
+				EC61D8F228ECDC6A00719351 /* RepositoryAPI.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,7 +421,6 @@
 			files = (
 				EC20BF2528C54CDE004079EF /* LaunchScreen.storyboard in Resources */,
 				EC20BF2228C54CDE004079EF /* Assets.xcassets in Resources */,
-				EC20BF2028C54CDC004079EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +444,6 @@
 			files = (
 				EC61D8D928EB83BD00719351 /* LaunchScreen.storyboard in Resources */,
 				EC61D8DA28EB83BD00719351 /* Assets.xcassets in Resources */,
-				EC61D8DB28EB83BD00719351 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,15 +454,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC61D8E428EBB0DF00719351 /* MTCardGalleryCoordinator.swift in Sources */,
-				EC20BF4D28C79112004079EF /* Coordinator.swift in Sources */,
-				EC61D8CA28EB832D00719351 /* MTCardGalleryViewController.swift in Sources */,
-				EC20BF5028C79215004079EF /* MTCoordinator.swift in Sources */,
-				EC20BF1D28C54CDC004079EF /* MTSearchViewController.swift in Sources */,
+				EC61D8F328ECDC6B00719351 /* TargetType.swift in Sources */,
+				EC61D8E428EBB0DF00719351 /* CardGalleryCoordinator.swift in Sources */,
+				EC20BF4D28C79112004079EF /* CoordinatorProtocol.swift in Sources */,
+				EC1AF08028ECEAE400401D74 /* CardsDataModel.swift in Sources */,
+				EC61D8CA28EB832D00719351 /* CardGalleryViewController.swift in Sources */,
+				EC61D8F728ECDC6B00719351 /* RepositoryNetwork.swift in Sources */,
+				EC20BF5028C79215004079EF /* Coordinator.swift in Sources */,
+				EC20BF1D28C54CDC004079EF /* SearchViewController.swift in Sources */,
 				EC89B75428CCB0AE002D6A6E /* UITextField+Extension.swift in Sources */,
 				EC89B75228CC9763002D6A6E /* UIViewController+Extension.swift in Sources */,
+				EC61D8F528ECDC6B00719351 /* BaseApi.swift in Sources */,
 				EC20BF1928C54CDC004079EF /* AppDelegate.swift in Sources */,
-				EC61D8E728EBB4B200719351 /* MTSearchViewModel.swift in Sources */,
+				EC61D8F928ECDC6B00719351 /* RepositoryAPI.swift in Sources */,
+				EC61D8E728EBB4B200719351 /* SearchViewModel.swift in Sources */,
+				EC1AF08528ECEB2C00401D74 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,15 +493,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC61D8E528EBB19700719351 /* MTCardGalleryCoordinator.swift in Sources */,
-				EC61D8CF28EB83BD00719351 /* Coordinator.swift in Sources */,
-				EC61D8D028EB83BD00719351 /* MTCardGalleryViewController.swift in Sources */,
-				EC61D8D128EB83BD00719351 /* MTCoordinator.swift in Sources */,
-				EC61D8D228EB83BD00719351 /* MTSearchViewController.swift in Sources */,
+				EC61D8F428ECDC6B00719351 /* TargetType.swift in Sources */,
+				EC61D8E528EBB19700719351 /* CardGalleryCoordinator.swift in Sources */,
+				EC61D8CF28EB83BD00719351 /* CoordinatorProtocol.swift in Sources */,
+				EC1AF08128ECEAE400401D74 /* CardsDataModel.swift in Sources */,
+				EC61D8D028EB83BD00719351 /* CardGalleryViewController.swift in Sources */,
+				EC61D8F828ECDC6B00719351 /* RepositoryNetwork.swift in Sources */,
+				EC61D8D128EB83BD00719351 /* Coordinator.swift in Sources */,
+				EC61D8D228EB83BD00719351 /* SearchViewController.swift in Sources */,
 				EC61D8D328EB83BD00719351 /* UITextField+Extension.swift in Sources */,
 				EC61D8D428EB83BD00719351 /* UIViewController+Extension.swift in Sources */,
+				EC61D8F628ECDC6B00719351 /* BaseApi.swift in Sources */,
 				EC61D8D528EB83BD00719351 /* AppDelegate.swift in Sources */,
-				EC61D8E828EBB4B200719351 /* MTSearchViewModel.swift in Sources */,
+				EC61D8FA28ECDC6B00719351 /* RepositoryAPI.swift in Sources */,
+				EC61D8E828EBB4B200719351 /* SearchViewModel.swift in Sources */,
+				EC1AF08628ECEB2C00401D74 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,14 +527,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC20BF1E28C54CDC004079EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC20BF1F28C54CDC004079EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC20BF2328C54CDE004079EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC20BF1428C54CDC004079EF"
-               BuildableName = "MGTApp.app"
+               BuildableName = "MTGApp.app"
                BlueprintName = "MTGApp"
                ReferencedContainer = "container:MTG.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC20BF2A28C54CDE004079EF"
-               BuildableName = "MGTTests.xctest"
+               BuildableName = "MTGTests.xctest"
                BlueprintName = "MTGTests"
                ReferencedContainer = "container:MTG.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC20BF3428C54CDE004079EF"
-               BuildableName = "MGTUITests.xctest"
+               BuildableName = "MTGUITests.xctest"
                BlueprintName = "MTGUITests"
                ReferencedContainer = "container:MTG.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC20BF1428C54CDC004079EF"
-            BuildableName = "MGTApp.app"
+            BuildableName = "MTGApp.app"
             BlueprintName = "MTGApp"
             ReferencedContainer = "container:MTG.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC20BF1428C54CDC004079EF"
-            BuildableName = "MGTApp.app"
+            BuildableName = "MTGApp.app"
             BlueprintName = "MTGApp"
             ReferencedContainer = "container:MTG.xcodeproj">
          </BuildableReference>
