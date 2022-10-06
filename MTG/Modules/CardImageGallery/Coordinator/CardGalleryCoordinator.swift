@@ -21,7 +21,7 @@ final class CardGalleryCoordinator: CoordinatorProtocol {
     
     // MARK: Init
     
-    init(navigationController: UINavigationController){
+    init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
@@ -30,9 +30,9 @@ final class CardGalleryCoordinator: CoordinatorProtocol {
     func start() {
         let useCase  = CardGalleryUseCase(api: api)
         let viewModel = CardGalleryViewModel(useCase: useCase)
-        let vc = CardGalleryViewController.create(with: viewModel)
+        let viewController = CardGalleryViewController.create(with: viewModel)
         viewModel.searchCard(name: cardName ?? "")
-        navigationController.pushViewController(vc, animated: false)
+        navigationController.pushViewController(viewController, animated: false)
     }
     
 }

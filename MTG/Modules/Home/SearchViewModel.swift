@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SearchViewModelProtocol: AnyObject {
-    func goToSearchCard(nameCard:String)
+    func goToSearchCard(nameCard: String)
 }
 
 class SearchViewModel: SearchViewModelProtocol {

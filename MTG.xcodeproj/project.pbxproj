@@ -17,6 +17,10 @@
 		EC1AF0A228EE1C8200401D74 /* CardGalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF09B28EE197900401D74 /* CardGalleryViewModel.swift */; };
 		EC1AF0A528EE1D5100401D74 /* CardGalleryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF0A428EE1D5100401D74 /* CardGalleryUseCase.swift */; };
 		EC1AF0A628EE1D5100401D74 /* CardGalleryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF0A428EE1D5100401D74 /* CardGalleryUseCase.swift */; };
+		EC1AF0A828EF13EE00401D74 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF0A728EF13EE00401D74 /* CardTableViewCell.swift */; };
+		EC1AF0A928EF13EE00401D74 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF0A728EF13EE00401D74 /* CardTableViewCell.swift */; };
+		EC1AF0AC28EF17BF00401D74 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EC1AF0AB28EF17BF00401D74 /* .swiftlint.yml */; };
+		EC1AF0AD28EF17BF00401D74 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EC1AF0AB28EF17BF00401D74 /* .swiftlint.yml */; };
 		EC20BF1928C54CDC004079EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF1828C54CDC004079EF /* AppDelegate.swift */; };
 		EC20BF1D28C54CDC004079EF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF1C28C54CDC004079EF /* SearchViewController.swift */; };
 		EC20BF2228C54CDE004079EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC20BF2128C54CDE004079EF /* Assets.xcassets */; };
@@ -77,6 +81,8 @@
 		EC1AF09B28EE197900401D74 /* CardGalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGalleryViewModel.swift; sourceTree = "<group>"; };
 		EC1AF09E28EE19BB00401D74 /* CardViewGalleryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewGalleryProtocol.swift; sourceTree = "<group>"; };
 		EC1AF0A428EE1D5100401D74 /* CardGalleryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGalleryUseCase.swift; sourceTree = "<group>"; };
+		EC1AF0A728EF13EE00401D74 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		EC1AF0AB28EF17BF00401D74 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		EC20BF1528C54CDC004079EF /* MTGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC20BF1828C54CDC004079EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC20BF1C28C54CDC004079EF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				EC61D8C928EB832D00719351 /* CardGalleryViewController.swift */,
+				EC1AF0A728EF13EE00401D74 /* CardTableViewCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -226,6 +233,7 @@
 				EC20BF2128C54CDE004079EF /* Assets.xcassets */,
 				EC20BF2328C54CDE004079EF /* LaunchScreen.storyboard */,
 				EC20BF2628C54CDE004079EF /* Info.plist */,
+				EC1AF0AB28EF17BF00401D74 /* .swiftlint.yml */,
 			);
 			path = MTG;
 			sourceTree = "<group>";
@@ -398,6 +406,7 @@
 				EC61D8CE28EB83BD00719351 /* Sources */,
 				EC61D8D628EB83BD00719351 /* Frameworks */,
 				EC61D8D828EB83BD00719351 /* Resources */,
+				EC1AF0AA28EF15DA00401D74 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -463,6 +472,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC1AF0AC28EF17BF00401D74 /* .swiftlint.yml in Resources */,
 				EC20BF2528C54CDE004079EF /* LaunchScreen.storyboard in Resources */,
 				EC20BF2228C54CDE004079EF /* Assets.xcassets in Resources */,
 			);
@@ -486,12 +496,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC1AF0AD28EF17BF00401D74 /* .swiftlint.yml in Resources */,
 				EC61D8D928EB83BD00719351 /* LaunchScreen.storyboard in Resources */,
 				EC61D8DA28EB83BD00719351 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EC1AF0AA28EF15DA00401D74 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC20BF1128C54CDC004079EF /* Sources */ = {
@@ -503,6 +534,7 @@
 				EC20BF4D28C79112004079EF /* CoordinatorProtocol.swift in Sources */,
 				EC1AF08028ECEAE400401D74 /* CardsDataModel.swift in Sources */,
 				EC61D8CA28EB832D00719351 /* CardGalleryViewController.swift in Sources */,
+				EC1AF0A828EF13EE00401D74 /* CardTableViewCell.swift in Sources */,
 				EC61D8F728ECDC6B00719351 /* RepositoryNetwork.swift in Sources */,
 				EC1AF0A528EE1D5100401D74 /* CardGalleryUseCase.swift in Sources */,
 				EC20BF5028C79215004079EF /* Coordinator.swift in Sources */,
@@ -545,6 +577,7 @@
 				EC61D8CF28EB83BD00719351 /* CoordinatorProtocol.swift in Sources */,
 				EC1AF08128ECEAE400401D74 /* CardsDataModel.swift in Sources */,
 				EC61D8D028EB83BD00719351 /* CardGalleryViewController.swift in Sources */,
+				EC1AF0A928EF13EE00401D74 /* CardTableViewCell.swift in Sources */,
 				EC61D8F828ECDC6B00719351 /* RepositoryNetwork.swift in Sources */,
 				EC1AF0A628EE1D5100401D74 /* CardGalleryUseCase.swift in Sources */,
 				EC1AF0A228EE1C8200401D74 /* CardGalleryViewModel.swift in Sources */,

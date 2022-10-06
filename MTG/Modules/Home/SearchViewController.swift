@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class SearchViewController: UIViewController {
     
     // MARK: Private Properties
@@ -43,7 +42,6 @@ class SearchViewController: UIViewController {
         button.setTitle("BUSCAR", for: .normal)
         button.addTarget(self, action: #selector(searchCart), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
-
         return button
     }()
     
@@ -69,7 +67,7 @@ class SearchViewController: UIViewController {
     }
     
     private func builHierarchy() {
-        view.addSubViews(with: [titleHome,searchBar,searchCardBtn])
+        view.addSubViews(with: [titleHome, searchBar, searchCardBtn])
     }
     
     private func setupConstraints() {
@@ -97,4 +95,3 @@ class SearchViewController: UIViewController {
         viewModel.goToSearchCard(nameCard: text)
     }
 }
-

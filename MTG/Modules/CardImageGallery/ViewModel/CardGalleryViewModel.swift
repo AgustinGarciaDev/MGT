@@ -18,14 +18,14 @@ class CardGalleryViewModel: CardGalleryViewModelProtocol {
         self.useCase = useCase
     }
     
-    func searchCard(name:String) {
+    func searchCard(name: String) {
         useCase.searchCard(nameCard: name) {[weak self] response in
             guard let self = self else {return}
             
             switch response {
             case .success(let cards):
                 print(cards)
-            case .failure(_):
+            case .failure:
                 print("ERROR")
             }
         }

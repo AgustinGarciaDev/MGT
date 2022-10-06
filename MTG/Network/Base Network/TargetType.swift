@@ -15,7 +15,7 @@ enum HTTPMethod: String {
     case delete = "DELETE"
 }
 
-enum Task{
+enum Task {
     case requestPlain
     case requestParameters(parameters: [String: Any], encoding: ParameterEncoding)
 }

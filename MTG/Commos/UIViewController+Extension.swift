@@ -8,15 +8,12 @@
 import Foundation
 import UIKit
 
-
-extension UIView{
+extension UIView {
     
-    func addSubViews(with views: [UIView]){
+    func addSubViews(with views: [UIView]) {
         views.forEach { view in
             self.addSubview(view)
         }
     }
-    
-    
     
 }

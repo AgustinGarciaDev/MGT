@@ -12,11 +12,10 @@ protocol CardGalleryViewUpdatedProtocol {
 }
 
 protocol CardGalleryViewModelProtocol {
-    func searchCard(name:String)
+    func searchCard(name: String)
     var view: CardGalleryViewUpdatedProtocol? {get set}
 }
 
 protocol CardGalleryUseCaseProtocol {
-    func searchCard(nameCard:String,completionHandler: @escaping (Result<CardsDataModel, NSError>) -> Void)
+    func searchCard(nameCard: String, completionHandler: @escaping (Result<CardsDataModel, NSError>) -> Void)
 }
-

@@ -6,12 +6,18 @@
 //
 
 import Foundation
-
 // MARK: - Welcome
+
 struct CardsDataModel: Decodable {
+    let hasMore: Bool?
+    let nextPage: String?
     let object: String?
     let totalCards: Int?
-    let hasMore: Bool?
-    let next_page: String?
-    let data: [CardModel]?
+    let data: [CardModel?]
+    
+    enum CodingKeys: String, CodingKey {
+        case hasMore = "has_more"
+        case nextPage = "next_page"
+        case object, totalCards, data
+    }
 }
