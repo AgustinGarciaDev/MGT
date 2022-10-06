@@ -24,7 +24,7 @@ class CardGalleryViewModel: CardGalleryViewModelProtocol {
             
             switch response {
             case .success(let cards):
-                print(cards)
+                self.view?.listCards(cards.data)
             case .failure:
                 print("ERROR")
             }

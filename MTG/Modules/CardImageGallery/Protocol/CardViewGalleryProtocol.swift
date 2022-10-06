@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CardGalleryViewUpdatedProtocol {
-   // func searchCard(name:String)
+    func listCards(_ cards: [CardModel?])
 }
 
 protocol CardGalleryViewModelProtocol {
