@@ -8,48 +8,34 @@
 import Foundation
 
 enum RepositoriesNetworking {
-    case getPostUser(id: String)
-    case getAllUsers
-    case getPost
+    case getCards(name: String)
 }
 
 extension RepositoriesNetworking: TargetType {
     var baseURL: String {
         switch self {
         default:
-            return ""
+            return "https://api.scryfall.com"
         }
     }
 
     var path: String {
         switch self {
-        case .getPostUser(let id):
-            return "/posts?userId=\(id)"
-        case .getAllUsers:
-            return "/users"
-        case .getPost:
-            return "/posts"
+        case .getCards(let name):
+            return "/cards/search?q=\(name)"
         }
     }
 
     var method: HTTPMethod {
         switch self {
-        case .getPostUser:
-            return .get
-        case .getAllUsers:
-            return .get
-        case .getPost:
+        case .getCards:
             return .get
         }
     }
 
     var task: Task {
         switch self {
-        case .getAllUsers:
-            return .requestPlain
-        case .getPostUser:
-            return .requestPlain
-        case .getPost:
+        case .getCards:
             return .requestPlain
         }
     }

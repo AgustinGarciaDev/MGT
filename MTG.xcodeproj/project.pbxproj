@@ -11,6 +11,12 @@
 		EC1AF08128ECEAE400401D74 /* CardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF07F28ECEAE400401D74 /* CardsDataModel.swift */; };
 		EC1AF08528ECEB2C00401D74 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF08428ECEB2C00401D74 /* CardModel.swift */; };
 		EC1AF08628ECEB2C00401D74 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF08428ECEB2C00401D74 /* CardModel.swift */; };
+		EC1AF09C28EE197900401D74 /* CardGalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF09B28EE197900401D74 /* CardGalleryViewModel.swift */; };
+		EC1AF09F28EE19BB00401D74 /* CardViewGalleryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF09E28EE19BB00401D74 /* CardViewGalleryProtocol.swift */; };
+		EC1AF0A128EE1C7D00401D74 /* CardViewGalleryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF09E28EE19BB00401D74 /* CardViewGalleryProtocol.swift */; };
+		EC1AF0A228EE1C8200401D74 /* CardGalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF09B28EE197900401D74 /* CardGalleryViewModel.swift */; };
+		EC1AF0A528EE1D5100401D74 /* CardGalleryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF0A428EE1D5100401D74 /* CardGalleryUseCase.swift */; };
+		EC1AF0A628EE1D5100401D74 /* CardGalleryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1AF0A428EE1D5100401D74 /* CardGalleryUseCase.swift */; };
 		EC20BF1928C54CDC004079EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF1828C54CDC004079EF /* AppDelegate.swift */; };
 		EC20BF1D28C54CDC004079EF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF1C28C54CDC004079EF /* SearchViewController.swift */; };
 		EC20BF2228C54CDE004079EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC20BF2128C54CDE004079EF /* Assets.xcassets */; };
@@ -68,6 +74,9 @@
 /* Begin PBXFileReference section */
 		EC1AF07F28ECEAE400401D74 /* CardsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDataModel.swift; sourceTree = "<group>"; };
 		EC1AF08428ECEB2C00401D74 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		EC1AF09B28EE197900401D74 /* CardGalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGalleryViewModel.swift; sourceTree = "<group>"; };
+		EC1AF09E28EE19BB00401D74 /* CardViewGalleryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewGalleryProtocol.swift; sourceTree = "<group>"; };
+		EC1AF0A428EE1D5100401D74 /* CardGalleryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGalleryUseCase.swift; sourceTree = "<group>"; };
 		EC20BF1528C54CDC004079EF /* MTGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC20BF1828C54CDC004079EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC20BF1C28C54CDC004079EF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +159,38 @@
 				EC1AF08428ECEB2C00401D74 /* CardModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EC1AF09A28EE195200401D74 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC1AF09B28EE197900401D74 /* CardGalleryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EC1AF09D28EE19A500401D74 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EC1AF09E28EE19BB00401D74 /* CardViewGalleryProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EC1AF0A028EE1AF400401D74 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				EC1AF0A428EE1D5100401D74 /* CardGalleryUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		EC1AF0A328EE1D3200401D74 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EC61D8C928EB832D00719351 /* CardGalleryViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		EC20BF0C28C54CDC004079EF = {
@@ -236,9 +277,12 @@
 		EC61D8C828EB82F200719351 /* CardImageGallery */ = {
 			isa = PBXGroup;
 			children = (
+				EC1AF0A328EE1D3200401D74 /* UI */,
+				EC1AF0A028EE1AF400401D74 /* UseCase */,
+				EC1AF09D28EE19A500401D74 /* Protocol */,
+				EC1AF09A28EE195200401D74 /* ViewModel */,
 				EC1AF07E28ECEAC900401D74 /* Model */,
 				EC61D8E228EBB06800719351 /* Coordinator */,
-				EC61D8C928EB832D00719351 /* CardGalleryViewController.swift */,
 			);
 			path = CardImageGallery;
 			sourceTree = "<group>";
@@ -460,13 +504,16 @@
 				EC1AF08028ECEAE400401D74 /* CardsDataModel.swift in Sources */,
 				EC61D8CA28EB832D00719351 /* CardGalleryViewController.swift in Sources */,
 				EC61D8F728ECDC6B00719351 /* RepositoryNetwork.swift in Sources */,
+				EC1AF0A528EE1D5100401D74 /* CardGalleryUseCase.swift in Sources */,
 				EC20BF5028C79215004079EF /* Coordinator.swift in Sources */,
 				EC20BF1D28C54CDC004079EF /* SearchViewController.swift in Sources */,
 				EC89B75428CCB0AE002D6A6E /* UITextField+Extension.swift in Sources */,
 				EC89B75228CC9763002D6A6E /* UIViewController+Extension.swift in Sources */,
 				EC61D8F528ECDC6B00719351 /* BaseApi.swift in Sources */,
+				EC1AF09C28EE197900401D74 /* CardGalleryViewModel.swift in Sources */,
 				EC20BF1928C54CDC004079EF /* AppDelegate.swift in Sources */,
 				EC61D8F928ECDC6B00719351 /* RepositoryAPI.swift in Sources */,
+				EC1AF09F28EE19BB00401D74 /* CardViewGalleryProtocol.swift in Sources */,
 				EC61D8E728EBB4B200719351 /* SearchViewModel.swift in Sources */,
 				EC1AF08528ECEB2C00401D74 /* CardModel.swift in Sources */,
 			);
@@ -499,6 +546,8 @@
 				EC1AF08128ECEAE400401D74 /* CardsDataModel.swift in Sources */,
 				EC61D8D028EB83BD00719351 /* CardGalleryViewController.swift in Sources */,
 				EC61D8F828ECDC6B00719351 /* RepositoryNetwork.swift in Sources */,
+				EC1AF0A628EE1D5100401D74 /* CardGalleryUseCase.swift in Sources */,
+				EC1AF0A228EE1C8200401D74 /* CardGalleryViewModel.swift in Sources */,
 				EC61D8D128EB83BD00719351 /* Coordinator.swift in Sources */,
 				EC61D8D228EB83BD00719351 /* SearchViewController.swift in Sources */,
 				EC61D8D328EB83BD00719351 /* UITextField+Extension.swift in Sources */,
@@ -508,6 +557,7 @@
 				EC61D8FA28ECDC6B00719351 /* RepositoryAPI.swift in Sources */,
 				EC61D8E828EBB4B200719351 /* SearchViewModel.swift in Sources */,
 				EC1AF08628ECEB2C00401D74 /* CardModel.swift in Sources */,
+				EC1AF0A128EE1C7D00401D74 /* CardViewGalleryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

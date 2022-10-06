@@ -8,14 +8,13 @@
 import Foundation
 
 protocol RepositoriesAPIProtocol {
-    func searchCard(completionHandler: @escaping (Result<[CardsDataModel], NSError>) -> Void)
-   // func getAllUsers(completionHandler: @escaping (Result<[UserModel], NSError>) -> Void)
- //   func getAllPosts(completionHandler: @escaping (Result<[PostModel], NSError>) -> Void)
+    func searchCard(nameCard:String,completionHandler: @escaping (Result<CardsDataModel, NSError>) -> Void)
 }
 
 class RepositoriesAPI: BaseAPI<RepositoriesNetworking>, RepositoriesAPIProtocol {
-    func searchCard(completionHandler: @escaping (Result<[CardsDataModel], NSError>) -> Void) {
-        
+    func searchCard(nameCard:String, completionHandler: @escaping (Result<CardsDataModel, NSError>) -> Void) {
+        fetchData(target: .getCards(name: nameCard), responseClass: CardsDataModel.self) { result in
+            completionHandler(result)
+        }
     }
-
 }

@@ -17,6 +17,8 @@ final class CardGalleryCoordinator: CoordinatorProtocol {
     var parentCoordinator: CoordinatorProtocol?
     var cardName: String?
     
+    let api = RepositoriesAPI()
+    
     // MARK: Init
     
     init(navigationController: UINavigationController){
@@ -26,11 +28,11 @@ final class CardGalleryCoordinator: CoordinatorProtocol {
     // MARK: Coordinator Conformance
     
     func start() {
-        print("name card \(cardName)")
-       // let viewController = MTCardGalleryViewController()
-     //   navigationController.pushViewController(viewController, animated: false)
+        let useCase  = CardGalleryUseCase(api: api)
+        let viewModel = CardGalleryViewModel(useCase: useCase)
+        let vc = CardGalleryViewController.create(with: viewModel)
+        viewModel.searchCard(name: cardName ?? "")
+        navigationController.pushViewController(vc, animated: false)
     }
-    
-   
     
 }

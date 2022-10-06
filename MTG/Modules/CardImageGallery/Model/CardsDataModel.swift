@@ -9,8 +9,9 @@ import Foundation
 
 // MARK: - Welcome
 struct CardsDataModel: Decodable {
-    let object: String
-    let totalCards: Int
-    let hasMore: Bool
+    let object: String?
+    let totalCards: Int?
+    let hasMore: Bool?
+    let next_page: String?
     let data: [CardModel]?
 }
