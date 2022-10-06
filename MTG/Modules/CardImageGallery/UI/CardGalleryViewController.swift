@@ -43,6 +43,7 @@ class CardGalleryViewController: UIViewController {
     }
     
     func builHierarchy() {
+        view.backgroundColor = .white
         view.addSubViews(with: [cardListTableView])
     }
     
