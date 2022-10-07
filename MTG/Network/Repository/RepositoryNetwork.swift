@@ -22,7 +22,7 @@ extension RepositoriesNetworking: TargetType {
     var path: String {
         switch self {
         case .getCards(let name):
-            return "/cards/search?q=\(name)"
+            return "/cards/search?order=cmc&q=\(name)"
         }
     }
 

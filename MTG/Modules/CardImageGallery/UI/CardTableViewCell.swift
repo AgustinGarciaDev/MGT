@@ -29,6 +29,7 @@ class CardTableViewCell: UITableViewCell {
     }
 
     private func setupView() {
+       // backgroundColor =  UIColor(named: "PrimaryColor")
         builHierarchy()
         setupConstraints()
     }
@@ -51,7 +52,7 @@ class CardTableViewCell: UITableViewCell {
         if let url = URL(string: imageUrl) {
             let task = URLSession.shared.dataTask(with: url) { data, _, error in
                 guard let data = data, error == nil else { return }
-                DispatchQueue.main.async { /// execute on main thread
+                DispatchQueue.main.async { 
                     self.buttonImage.setImage(UIImage(data: data), for: .normal)
                 }
             }

@@ -56,6 +56,13 @@
 		EC61D8FA28ECDC6B00719351 /* RepositoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8F228ECDC6A00719351 /* RepositoryAPI.swift */; };
 		EC89B75228CC9763002D6A6E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC89B75128CC9763002D6A6E /* UIViewController+Extension.swift */; };
 		EC89B75428CCB0AE002D6A6E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC89B75328CCB0AE002D6A6E /* UITextField+Extension.swift */; };
+		EC9B10E028F076D6007C589E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EC9B10DF28F076D6007C589E /* Lottie */; };
+		EC9B10E228F076EA007C589E /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B10E128F076EA007C589E /* LoadingScreen.swift */; };
+		EC9B10E328F076EA007C589E /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B10E128F076EA007C589E /* LoadingScreen.swift */; };
+		EC9B10E628F07957007C589E /* mtg-loader.json in Resources */ = {isa = PBXBuildFile; fileRef = EC9B10E528F07956007C589E /* mtg-loader.json */; };
+		EC9B10E728F07957007C589E /* mtg-loader.json in Resources */ = {isa = PBXBuildFile; fileRef = EC9B10E528F07956007C589E /* mtg-loader.json */; };
+		EC9B10EA28F07FE8007C589E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EC9B10E928F07FE8007C589E /* Lottie */; };
+		EC9B10ED28F08052007C589E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EC9B10EC28F08052007C589E /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +114,8 @@
 		EC61D8F228ECDC6A00719351 /* RepositoryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryAPI.swift; sourceTree = "<group>"; };
 		EC89B75128CC9763002D6A6E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		EC89B75328CCB0AE002D6A6E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		EC9B10E128F076EA007C589E /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		EC9B10E528F07956007C589E /* mtg-loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mtg-loader.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +124,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC20BF4A28C78C4A004079EF /* Alamofire in Frameworks */,
+				EC9B10E028F076D6007C589E /* Lottie in Frameworks */,
+				EC9B10EA28F07FE8007C589E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC61D8D728EB83BD00719351 /* Alamofire in Frameworks */,
+				EC9B10ED28F08052007C589E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +220,7 @@
 				EC20BF3828C54CDF004079EF /* MGTUITests */,
 				EC20BF1628C54CDC004079EF /* Products */,
 				EC61D8E028EB83BD00719351 /* MTGApp-Dev.plist */,
+				EC9B10EB28F08052007C589E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -258,9 +271,11 @@
 		EC20BF4B28C790F4004079EF /* Commos */ = {
 			isa = PBXGroup;
 			children = (
+				EC9B10E428F0794B007C589E /* Lottie */,
 				EC20BF4C28C79112004079EF /* CoordinatorProtocol.swift */,
 				EC89B75128CC9763002D6A6E /* UIViewController+Extension.swift */,
 				EC89B75328CCB0AE002D6A6E /* UITextField+Extension.swift */,
+				EC9B10E128F076EA007C589E /* LoadingScreen.swift */,
 			);
 			path = Commos;
 			sourceTree = "<group>";
@@ -340,6 +355,21 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		EC9B10E428F0794B007C589E /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				EC9B10E528F07956007C589E /* mtg-loader.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		EC9B10EB28F08052007C589E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -358,6 +388,8 @@
 			name = MTGApp;
 			packageProductDependencies = (
 				EC20BF4928C78C4A004079EF /* Alamofire */,
+				EC9B10DF28F076D6007C589E /* Lottie */,
+				EC9B10E928F07FE8007C589E /* Lottie */,
 			);
 			productName = MGT;
 			productReference = EC20BF1528C54CDC004079EF /* MTGApp.app */;
@@ -415,6 +447,7 @@
 			name = "MTGApp-dev";
 			packageProductDependencies = (
 				EC61D8CC28EB83BD00719351 /* Alamofire */,
+				EC9B10EC28F08052007C589E /* Lottie */,
 			);
 			productName = MGT;
 			productReference = EC61D8DF28EB83BD00719351 /* MTGApp-dev.app */;
@@ -454,6 +487,8 @@
 			mainGroup = EC20BF0C28C54CDC004079EF;
 			packageReferences = (
 				EC20BF4828C78C4A004079EF /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EC9B10DE28F076D6007C589E /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				EC9B10E828F07FE8007C589E /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = EC20BF1628C54CDC004079EF /* Products */;
 			projectDirPath = "";
@@ -473,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1AF0AC28EF17BF00401D74 /* .swiftlint.yml in Resources */,
+				EC9B10E628F07957007C589E /* mtg-loader.json in Resources */,
 				EC20BF2528C54CDE004079EF /* LaunchScreen.storyboard in Resources */,
 				EC20BF2228C54CDE004079EF /* Assets.xcassets in Resources */,
 			);
@@ -497,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1AF0AD28EF17BF00401D74 /* .swiftlint.yml in Resources */,
+				EC9B10E728F07957007C589E /* mtg-loader.json in Resources */,
 				EC61D8D928EB83BD00719351 /* LaunchScreen.storyboard in Resources */,
 				EC61D8DA28EB83BD00719351 /* Assets.xcassets in Resources */,
 			);
@@ -536,6 +573,7 @@
 				EC61D8CA28EB832D00719351 /* CardGalleryViewController.swift in Sources */,
 				EC1AF0A828EF13EE00401D74 /* CardTableViewCell.swift in Sources */,
 				EC61D8F728ECDC6B00719351 /* RepositoryNetwork.swift in Sources */,
+				EC9B10E228F076EA007C589E /* LoadingScreen.swift in Sources */,
 				EC1AF0A528EE1D5100401D74 /* CardGalleryUseCase.swift in Sources */,
 				EC20BF5028C79215004079EF /* Coordinator.swift in Sources */,
 				EC20BF1D28C54CDC004079EF /* SearchViewController.swift in Sources */,
@@ -579,6 +617,7 @@
 				EC61D8D028EB83BD00719351 /* CardGalleryViewController.swift in Sources */,
 				EC1AF0A928EF13EE00401D74 /* CardTableViewCell.swift in Sources */,
 				EC61D8F828ECDC6B00719351 /* RepositoryNetwork.swift in Sources */,
+				EC9B10E328F076EA007C589E /* LoadingScreen.swift in Sources */,
 				EC1AF0A628EE1D5100401D74 /* CardGalleryUseCase.swift in Sources */,
 				EC1AF0A228EE1C8200401D74 /* CardGalleryViewModel.swift in Sources */,
 				EC61D8D128EB83BD00719351 /* Coordinator.swift in Sources */,
@@ -740,6 +779,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -770,6 +810,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -872,8 +913,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6PTSGN23VN;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -891,7 +933,7 @@
 				OTHER_SWIFT_FLAGS = "-DDEV";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mgtApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = DistribucionMTG;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -903,6 +945,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -996,6 +1039,22 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		EC9B10DE28F076D6007C589E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		EC9B10E828F07FE8007C589E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios/";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1008,6 +1067,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EC61D8CD28EB83BD00719351 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		EC9B10DF28F076D6007C589E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9B10DE28F076D6007C589E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		EC9B10E928F07FE8007C589E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9B10E828F07FE8007C589E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		EC9B10EC28F08052007C589E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9B10DE28F076D6007C589E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

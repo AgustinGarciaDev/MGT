@@ -33,16 +33,9 @@ class SearchViewController: UIViewController {
         search.clearButtonMode = .always
         search.autocorrectionType = .no
         search.layer.cornerRadius = 15
+        search.delegate = self
+        search.becomeFirstResponder()
         return search
-    }()
-    
-    lazy private var searchCardBtn: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = UIColor(named: "SecondaryColor")
-        button.setTitle("BUSCAR", for: .normal)
-        button.addTarget(self, action: #selector(searchCart), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
     }()
     
     // MARK: Initializers
@@ -67,7 +60,7 @@ class SearchViewController: UIViewController {
     }
     
     private func builHierarchy() {
-        view.addSubViews(with: [titleHome, searchBar, searchCardBtn])
+        view.addSubViews(with: [titleHome, searchBar  ])
     }
     
     private func setupConstraints() {
@@ -82,16 +75,16 @@ class SearchViewController: UIViewController {
             searchBar.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16),
             searchBar.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -16),
             searchBar.heightAnchor.constraint(equalToConstant: 40),
-            
-            searchBar.heightAnchor.constraint(equalToConstant: 45),
-            searchCardBtn.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16),
-            searchCardBtn.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -16),
-            searchCardBtn.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: -32)
         ])
     }
+    
+}
 
-    @objc private func searchCart() {
-        guard let text = searchBar.text else {return}
+extension SearchViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        guard let text = searchBar.text else {return false}
         viewModel.goToSearchCard(nameCard: text)
+        textField.resignFirstResponder()
+        return true
     }
 }

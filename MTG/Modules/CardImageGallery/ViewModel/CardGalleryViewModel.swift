@@ -9,11 +9,11 @@ import Foundation
 
 class CardGalleryViewModel: CardGalleryViewModelProtocol {
     
-    weak var cardGalleryCoordinator: CardGalleryCoordinator!
-    
-    private var useCase: CardGalleryUseCaseProtocol
+    var coordinator: CardGalleryCoordinator?
     var view: CardGalleryViewUpdatedProtocol?
     
+    private var useCase: CardGalleryUseCaseProtocol
+ 
     init(useCase: CardGalleryUseCaseProtocol) {
         self.useCase = useCase
     }
@@ -21,7 +21,6 @@ class CardGalleryViewModel: CardGalleryViewModelProtocol {
     func searchCard(name: String) {
         useCase.searchCard(nameCard: name) {[weak self] response in
             guard let self = self else {return}
-            
             switch response {
             case .success(let cards):
                 self.view?.listCards(cards.data)

@@ -14,6 +14,7 @@ protocol CardGalleryViewUpdatedProtocol {
 protocol CardGalleryViewModelProtocol {
     func searchCard(name: String)
     var view: CardGalleryViewUpdatedProtocol? {get set}
+    var coordinator: CardGalleryCoordinator? {get set}
 }
 
 protocol CardGalleryUseCaseProtocol {

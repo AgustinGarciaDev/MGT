@@ -19,6 +19,8 @@ final class CardGalleryCoordinator: CoordinatorProtocol {
     
     let api = RepositoriesAPI()
     
+    private var loadingScreen: LoadingScreen?
+    
     // MARK: Init
     
     init(navigationController: UINavigationController) {
@@ -31,8 +33,8 @@ final class CardGalleryCoordinator: CoordinatorProtocol {
         let useCase  = CardGalleryUseCase(api: api)
         let viewModel = CardGalleryViewModel(useCase: useCase)
         let viewController = CardGalleryViewController.create(with: viewModel)
+        viewModel.coordinator = self
         viewModel.searchCard(name: cardName ?? "")
         navigationController.pushViewController(viewController, animated: false)
     }
-    
 }
