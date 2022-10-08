@@ -74,7 +74,7 @@ class SearchViewController: UIViewController {
             searchBar.centerXAnchor.constraint(equalTo: safeArea.centerXAnchor),
             searchBar.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16),
             searchBar.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -16),
-            searchBar.heightAnchor.constraint(equalToConstant: 40),
+            searchBar.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
     

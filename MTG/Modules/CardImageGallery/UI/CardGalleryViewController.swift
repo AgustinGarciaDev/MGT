@@ -45,11 +45,10 @@ class CardGalleryViewController: UIViewController {
         setupConstraints()
     }
     
-    func configurationInitial(){
+    func configurationInitial() {
         navigationController?.navigationBar.isHidden = true
         showLoadingScreen()
         viewModel.view = self
-        
     }
 
     func builHierarchy() {
@@ -105,7 +104,8 @@ extension CardGalleryViewController: UITableViewDelegate, UITableViewDataSource 
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("toco aca")
+        guard let cardInfo = cardList[indexPath.row] else {return}
+        viewModel.navigateToShowCardInformation(card: cardInfo)
     }
 }
 

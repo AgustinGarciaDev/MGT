@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 final class CardGalleryCoordinator: CoordinatorProtocol {
     
@@ -36,5 +37,10 @@ final class CardGalleryCoordinator: CoordinatorProtocol {
         viewModel.coordinator = self
         viewModel.searchCard(name: cardName ?? "")
         navigationController.pushViewController(viewController, animated: false)
+    }
+    
+    func showCardViewController(with info: CardModel) {
+        let viewController = UIHostingController(rootView: ShowCard(model: info))
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

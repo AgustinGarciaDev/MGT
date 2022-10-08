@@ -29,4 +29,8 @@ class CardGalleryViewModel: CardGalleryViewModelProtocol {
             }
         }
     }
+    
+    func navigateToShowCardInformation(card: CardModel) {
+        coordinator?.showCardViewController(with: card)
+    }
 }

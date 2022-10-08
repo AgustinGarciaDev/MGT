@@ -12,9 +12,10 @@ protocol CardGalleryViewUpdatedProtocol {
 }
 
 protocol CardGalleryViewModelProtocol {
-    func searchCard(name: String)
     var view: CardGalleryViewUpdatedProtocol? {get set}
     var coordinator: CardGalleryCoordinator? {get set}
+    func searchCard(name: String)
+    func navigateToShowCardInformation(card: CardModel)
 }
 
 protocol CardGalleryUseCaseProtocol {
