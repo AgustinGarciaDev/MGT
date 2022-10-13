@@ -40,7 +40,7 @@ final class CardGalleryCoordinator: CoordinatorProtocol {
     }
     
     func showCardViewController(with info: CardModel) {
-        let viewController = UIHostingController(rootView: ShowCard(model: info))
+        let viewController = ShowCardViewController(infoCard: info)
         navigationController.pushViewController(viewController, animated: true)
     }
 }
