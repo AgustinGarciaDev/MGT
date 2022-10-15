@@ -33,7 +33,10 @@
 		EC20BF4A28C78C4A004079EF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EC20BF4928C78C4A004079EF /* Alamofire */; };
 		EC20BF4D28C79112004079EF /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF4C28C79112004079EF /* CoordinatorProtocol.swift */; };
 		EC20BF5028C79215004079EF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF4F28C79215004079EF /* Coordinator.swift */; };
-		EC484E7E28F8D981000D7066 /* SearchTextInString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC484E7D28F8D981000D7066 /* SearchTextInString.swift */; };
+		EC484E8228F8F318000D7066 /* LegalitiesViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC484E8128F8F318000D7066 /* LegalitiesViewTableViewCell.swift */; };
+		EC484E8328F8F318000D7066 /* LegalitiesViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC484E8128F8F318000D7066 /* LegalitiesViewTableViewCell.swift */; };
+		EC484E8528FA04C8000D7066 /* UIImage+Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC484E8428FA04C8000D7066 /* UIImage+Extesion.swift */; };
+		EC484E8628FA04C8000D7066 /* UIImage+Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC484E8428FA04C8000D7066 /* UIImage+Extesion.swift */; };
 		EC61D8CA28EB832D00719351 /* CardGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8C928EB832D00719351 /* CardGalleryViewController.swift */; };
 		EC61D8CF28EB83BD00719351 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF4C28C79112004079EF /* CoordinatorProtocol.swift */; };
 		EC61D8D028EB83BD00719351 /* CardGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8C928EB832D00719351 /* CardGalleryViewController.swift */; };
@@ -66,8 +69,6 @@
 		EC9B10E728F07957007C589E /* mtg-loader.json in Resources */ = {isa = PBXBuildFile; fileRef = EC9B10E528F07956007C589E /* mtg-loader.json */; };
 		EC9B10EA28F07FE8007C589E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EC9B10E928F07FE8007C589E /* Lottie */; };
 		EC9B10ED28F08052007C589E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EC9B10EC28F08052007C589E /* Lottie */; };
-		EC9B10FC28F18C8B007C589E /* CardModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B10FB28F18C8B007C589E /* CardModel+Extension.swift */; };
-		EC9B10FD28F18C8B007C589E /* CardModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B10FB28F18C8B007C589E /* CardModel+Extension.swift */; };
 		ECFE7BF028F8B888003EEBFA /* CardProfileUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE7BEF28F8B888003EEBFA /* CardProfileUIView.swift */; };
 		ECFE7BF128F8B888003EEBFA /* CardProfileUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFE7BEF28F8B888003EEBFA /* CardProfileUIView.swift */; };
 /* End PBXBuildFile section */
@@ -111,7 +112,8 @@
 		EC20BF3B28C54CDF004079EF /* MGTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGTUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EC20BF4C28C79112004079EF /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		EC20BF4F28C79215004079EF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		EC484E7D28F8D981000D7066 /* SearchTextInString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextInString.swift; sourceTree = "<group>"; };
+		EC484E8128F8F318000D7066 /* LegalitiesViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalitiesViewTableViewCell.swift; sourceTree = "<group>"; };
+		EC484E8428FA04C8000D7066 /* UIImage+Extesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extesion.swift"; sourceTree = "<group>"; };
 		EC61D8C928EB832D00719351 /* CardGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGalleryViewController.swift; sourceTree = "<group>"; };
 		EC61D8DF28EB83BD00719351 /* MTGApp-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTGApp-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC61D8E028EB83BD00719351 /* MTGApp-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTGApp-Dev.plist"; sourceTree = "<group>"; };
@@ -125,7 +127,6 @@
 		EC89B75328CCB0AE002D6A6E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		EC9B10E128F076EA007C589E /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 		EC9B10E528F07956007C589E /* mtg-loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mtg-loader.json"; sourceTree = "<group>"; };
-		EC9B10FB28F18C8B007C589E /* CardModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardModel+Extension.swift"; sourceTree = "<group>"; };
 		ECFE7BEF28F8B888003EEBFA /* CardProfileUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProfileUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -305,7 +306,7 @@
 		EC484E7C28F8D96E000D7066 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				EC484E7D28F8D981000D7066 /* SearchTextInString.swift */,
+				EC484E8428FA04C8000D7066 /* UIImage+Extesion.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -397,6 +398,7 @@
 			children = (
 				EC1A50A028F78842002D408E /* ShowCardViewController.swift */,
 				ECFE7BEF28F8B888003EEBFA /* CardProfileUIView.swift */,
+				EC484E8128F8F318000D7066 /* LegalitiesViewTableViewCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -404,7 +406,6 @@
 		EC9B10FA28F18C77007C589E /* MockModels */ = {
 			isa = PBXGroup;
 			children = (
-				EC9B10FB28F18C8B007C589E /* CardModel+Extension.swift */,
 			);
 			path = MockModels;
 			sourceTree = "<group>";
@@ -616,6 +617,7 @@
 				EC9B10E228F076EA007C589E /* LoadingScreen.swift in Sources */,
 				EC1AF0A528EE1D5100401D74 /* CardGalleryUseCase.swift in Sources */,
 				ECFE7BF028F8B888003EEBFA /* CardProfileUIView.swift in Sources */,
+				EC484E8528FA04C8000D7066 /* UIImage+Extesion.swift in Sources */,
 				EC20BF5028C79215004079EF /* Coordinator.swift in Sources */,
 				EC20BF1D28C54CDC004079EF /* SearchViewController.swift in Sources */,
 				EC89B75428CCB0AE002D6A6E /* UITextField+Extension.swift in Sources */,
@@ -625,10 +627,9 @@
 				EC20BF1928C54CDC004079EF /* AppDelegate.swift in Sources */,
 				EC61D8F928ECDC6B00719351 /* RepositoryAPI.swift in Sources */,
 				EC1AF09F28EE19BB00401D74 /* CardViewGalleryProtocol.swift in Sources */,
-				EC484E7E28F8D981000D7066 /* SearchTextInString.swift in Sources */,
-				EC9B10FC28F18C8B007C589E /* CardModel+Extension.swift in Sources */,
 				EC61D8E728EBB4B200719351 /* SearchViewModel.swift in Sources */,
 				EC1AF08528ECEB2C00401D74 /* CardModel.swift in Sources */,
+				EC484E8228F8F318000D7066 /* LegalitiesViewTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,8 +673,9 @@
 				EC61D8F628ECDC6B00719351 /* BaseApi.swift in Sources */,
 				EC61D8D528EB83BD00719351 /* AppDelegate.swift in Sources */,
 				EC61D8FA28ECDC6B00719351 /* RepositoryAPI.swift in Sources */,
+				EC484E8628FA04C8000D7066 /* UIImage+Extesion.swift in Sources */,
 				EC61D8E828EBB4B200719351 /* SearchViewModel.swift in Sources */,
-				EC9B10FD28F18C8B007C589E /* CardModel+Extension.swift in Sources */,
+				EC484E8328F8F318000D7066 /* LegalitiesViewTableViewCell.swift in Sources */,
 				EC1AF08628ECEB2C00401D74 /* CardModel.swift in Sources */,
 				EC1AF0A128EE1C7D00401D74 /* CardViewGalleryProtocol.swift in Sources */,
 			);

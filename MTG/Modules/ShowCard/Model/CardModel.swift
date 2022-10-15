@@ -124,11 +124,11 @@ struct ImageUris: Decodable {
 
 // MARK: - Legalities
 struct Legalities: Decodable {
-    let standard, future, historic, gladiator: String?
-    let pioneer, explorer, modern, legacy: String?
-    let pauper, vintage, penny, commander: String?
-    let brawl, historicbrawl, alchemy, paupercommander: String?
-    let duel, oldschool, premodern: String?
+    let standard, future, historic, gladiator: String
+    let pioneer, explorer, modern, legacy: String
+    let pauper, vintage, penny, commander: String
+    let brawl, historicbrawl, alchemy, paupercommander: String
+    let duel, oldschool, premodern: String
 }
 
 // MARK: - Prices
