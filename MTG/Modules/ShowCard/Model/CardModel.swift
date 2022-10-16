@@ -28,10 +28,11 @@ struct CardModel: Decodable {
     let reserved, foil, nonfoil: Bool?
     let finishes: [String]?
     let oversized, promo, reprint, variation: Bool?
-    let setID, datumSet, setName, setType: String?
+    let setID, setName, setType: String?
+    let set: String
     let setURI, setSearchURI, scryfallSetURI, rulingsURI: String?
     let printsSearchURI: String?
-    let collectorNumber: String?
+    let collectorNumber: String
     let digital: Bool?
     let rarity, cardBackID, artist: String?
     let artistIDS: [String]?
@@ -68,7 +69,7 @@ struct CardModel: Decodable {
         case allParts = "all_parts"
         case legalities, games, reserved, foil, nonfoil, finishes, oversized, promo, reprint, variation
         case setID = "set_id"
-        case datumSet = "set"
+        case set 
         case setName = "set_name"
         case setType = "set_type"
         case setURI = "set_uri"

@@ -37,6 +37,10 @@
 		EC484E8328F8F318000D7066 /* LegalitiesViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC484E8128F8F318000D7066 /* LegalitiesViewTableViewCell.swift */; };
 		EC484E8528FA04C8000D7066 /* UIImage+Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC484E8428FA04C8000D7066 /* UIImage+Extesion.swift */; };
 		EC484E8628FA04C8000D7066 /* UIImage+Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC484E8428FA04C8000D7066 /* UIImage+Extesion.swift */; };
+		EC484E8A28FB3965000D7066 /* HeaderProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC484E8928FB3965000D7066 /* HeaderProfileView.swift */; };
+		EC484E8B28FB3965000D7066 /* HeaderProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC484E8928FB3965000D7066 /* HeaderProfileView.swift */; };
+		EC484E8D28FB440C000D7066 /* LenguageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC484E8C28FB440C000D7066 /* LenguageCollectionViewCell.swift */; };
+		EC484E8E28FB440C000D7066 /* LenguageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC484E8C28FB440C000D7066 /* LenguageCollectionViewCell.swift */; };
 		EC61D8CA28EB832D00719351 /* CardGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8C928EB832D00719351 /* CardGalleryViewController.swift */; };
 		EC61D8CF28EB83BD00719351 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20BF4C28C79112004079EF /* CoordinatorProtocol.swift */; };
 		EC61D8D028EB83BD00719351 /* CardGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61D8C928EB832D00719351 /* CardGalleryViewController.swift */; };
@@ -114,6 +118,8 @@
 		EC20BF4F28C79215004079EF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		EC484E8128F8F318000D7066 /* LegalitiesViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalitiesViewTableViewCell.swift; sourceTree = "<group>"; };
 		EC484E8428FA04C8000D7066 /* UIImage+Extesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extesion.swift"; sourceTree = "<group>"; };
+		EC484E8928FB3965000D7066 /* HeaderProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfileView.swift; sourceTree = "<group>"; };
+		EC484E8C28FB440C000D7066 /* LenguageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LenguageCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC61D8C928EB832D00719351 /* CardGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGalleryViewController.swift; sourceTree = "<group>"; };
 		EC61D8DF28EB83BD00719351 /* MTGApp-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTGApp-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC61D8E028EB83BD00719351 /* MTGApp-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTGApp-Dev.plist"; sourceTree = "<group>"; };
@@ -311,6 +317,24 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		EC484E8728FB36E8000D7066 /* CardProfile */ = {
+			isa = PBXGroup;
+			children = (
+				ECFE7BEF28F8B888003EEBFA /* CardProfileUIView.swift */,
+				EC484E8128F8F318000D7066 /* LegalitiesViewTableViewCell.swift */,
+			);
+			path = CardProfile;
+			sourceTree = "<group>";
+		};
+		EC484E8828FB394B000D7066 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				EC484E8928FB3965000D7066 /* HeaderProfileView.swift */,
+				EC484E8C28FB440C000D7066 /* LenguageCollectionViewCell.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		EC61D8C728EB82CC00719351 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,8 +421,8 @@
 			isa = PBXGroup;
 			children = (
 				EC1A50A028F78842002D408E /* ShowCardViewController.swift */,
-				ECFE7BEF28F8B888003EEBFA /* CardProfileUIView.swift */,
-				EC484E8128F8F318000D7066 /* LegalitiesViewTableViewCell.swift */,
+				EC484E8828FB394B000D7066 /* Header */,
+				EC484E8728FB36E8000D7066 /* CardProfile */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -619,6 +643,7 @@
 				ECFE7BF028F8B888003EEBFA /* CardProfileUIView.swift in Sources */,
 				EC484E8528FA04C8000D7066 /* UIImage+Extesion.swift in Sources */,
 				EC20BF5028C79215004079EF /* Coordinator.swift in Sources */,
+				EC484E8A28FB3965000D7066 /* HeaderProfileView.swift in Sources */,
 				EC20BF1D28C54CDC004079EF /* SearchViewController.swift in Sources */,
 				EC89B75428CCB0AE002D6A6E /* UITextField+Extension.swift in Sources */,
 				EC89B75228CC9763002D6A6E /* UIViewController+Extension.swift in Sources */,
@@ -627,6 +652,7 @@
 				EC20BF1928C54CDC004079EF /* AppDelegate.swift in Sources */,
 				EC61D8F928ECDC6B00719351 /* RepositoryAPI.swift in Sources */,
 				EC1AF09F28EE19BB00401D74 /* CardViewGalleryProtocol.swift in Sources */,
+				EC484E8D28FB440C000D7066 /* LenguageCollectionViewCell.swift in Sources */,
 				EC61D8E728EBB4B200719351 /* SearchViewModel.swift in Sources */,
 				EC1AF08528ECEB2C00401D74 /* CardModel.swift in Sources */,
 				EC484E8228F8F318000D7066 /* LegalitiesViewTableViewCell.swift in Sources */,
@@ -667,6 +693,7 @@
 				ECFE7BF128F8B888003EEBFA /* CardProfileUIView.swift in Sources */,
 				EC1AF0A228EE1C8200401D74 /* CardGalleryViewModel.swift in Sources */,
 				EC61D8D128EB83BD00719351 /* Coordinator.swift in Sources */,
+				EC484E8B28FB3965000D7066 /* HeaderProfileView.swift in Sources */,
 				EC61D8D228EB83BD00719351 /* SearchViewController.swift in Sources */,
 				EC61D8D328EB83BD00719351 /* UITextField+Extension.swift in Sources */,
 				EC61D8D428EB83BD00719351 /* UIViewController+Extension.swift in Sources */,
@@ -675,6 +702,7 @@
 				EC61D8FA28ECDC6B00719351 /* RepositoryAPI.swift in Sources */,
 				EC484E8628FA04C8000D7066 /* UIImage+Extesion.swift in Sources */,
 				EC61D8E828EBB4B200719351 /* SearchViewModel.swift in Sources */,
+				EC484E8E28FB440C000D7066 /* LenguageCollectionViewCell.swift in Sources */,
 				EC484E8328F8F318000D7066 /* LegalitiesViewTableViewCell.swift in Sources */,
 				EC1AF08628ECEB2C00401D74 /* CardModel.swift in Sources */,
 				EC1AF0A128EE1C7D00401D74 /* CardViewGalleryProtocol.swift in Sources */,

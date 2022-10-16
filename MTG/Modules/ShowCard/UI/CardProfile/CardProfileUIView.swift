@@ -73,7 +73,6 @@ class CardProfileView: UIView {
 
     private func setup() {
         addSubview(stackViewContainer)
-        
         setupConstraints()
     }
     
@@ -110,6 +109,10 @@ class CardProfileView: UIView {
 extension CardProfileView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return legalitiesInfo.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("touch tableview")
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
