@@ -7,13 +7,28 @@
 
 import UIKit
 
+protocol ShowCardViewUpdatedProtocol {
+    func updatedImage(url: String)
+}
+
 class ShowCardViewController: UIViewController {
 
     var infoCard: CardModel
     
+    var viewModel: ShowCardViewModelProtocol?
+    
+    // MARK: Initializers
+
+    static func create(with viewModel: ShowCardViewModelProtocol, infoCard: CardModel) -> ShowCardViewController {
+        let view = ShowCardViewController(infoCard: infoCard)
+        view.viewModel = viewModel
+        return view
+    }
+
     lazy private var headerProfileView: HeaderProfileView = {
         let headerProfile = HeaderProfileView(model: LangInfo(expantion: infoCard.set, collecterNumber: infoCard.collectorNumber))
         headerProfile.translatesAutoresizingMaskIntoConstraints = false
+        headerProfile.delegate = self
         return headerProfile
     }()
     
@@ -62,11 +77,16 @@ class ShowCardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        configurationInitial()
         builHierarchy()
         setupConstraints()
     }
 
+   private func configurationInitial() {
+        view.backgroundColor = .white
+       viewModel?.view = self
+    }
+    
     private func builHierarchy() {
         view.addSubview(scrollView)
     }
@@ -98,5 +118,16 @@ class ShowCardViewController: UIViewController {
             cardProfile.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             cardProfile.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16)
         ])
+    }
+}
+
+extension ShowCardViewController: HeaderDelegate, ShowCardViewUpdatedProtocol {
+    func updatedImage(url: String) {
+        imageView.imageFromURL(urlString: url)
+    }
+    
+    func languageSelect(_ language: String) {
+        let url = "\(infoCard.set)/\(infoCard.collectorNumber)/\(language.lowercased())"
+        viewModel?.sendInformationLanguage(url: url)
     }
 }

@@ -12,9 +12,15 @@ struct LangInfo {
     let collecterNumber: String
 }
 
+protocol HeaderDelegate: AnyObject {
+    func languageSelect(_ language: String)
+}
+
 class HeaderProfileView: UIView {
 
     var langInfo: LangInfo
+    
+    weak var delegate: HeaderDelegate?
 
     var listlanguages = ["EN", "ES", "FR", "DE", "IT", "JA", "KO", "RU"]
 
@@ -63,13 +69,13 @@ extension HeaderProfileView: UICollectionViewDataSource, UICollectionViewDelegat
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("celda click \(indexPath.row)")
+        delegate?.languageSelect(listlanguages[indexPath.row])
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? LanguageCollectionViewCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+                as? LanguageCollectionViewCell else { return UICollectionViewCell() }
 
-  //      cell.contentView.isUserInteractionEnabled = false
         cell.configurationCell(with: listlanguages[indexPath.row])
         return cell
     }

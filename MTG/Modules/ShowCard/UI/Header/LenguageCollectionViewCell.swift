@@ -16,7 +16,6 @@ class LanguageCollectionViewCell: UICollectionViewCell {
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 16
         button.isUserInteractionEnabled = false
-       // button.addTarget(self, action: #selector(touchButton), for: .touchUpInside)
         return button
     }()
     
@@ -41,9 +40,5 @@ class LanguageCollectionViewCell: UICollectionViewCell {
             button.centerXAnchor.constraint(equalTo: centerXAnchor),
             button.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
-    }
-    
-    @objc func touchButton() {
-        print("touch")
     }
 }

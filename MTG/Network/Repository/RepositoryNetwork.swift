@@ -9,6 +9,7 @@ import Foundation
 
 enum RepositoriesNetworking {
     case getCards(name: String)
+    case getCardLanguage(url:String)
 }
 
 extension RepositoriesNetworking: TargetType {
@@ -23,6 +24,8 @@ extension RepositoriesNetworking: TargetType {
         switch self {
         case .getCards(let name):
             return "/cards/search?order=cmc&q=\(name)"
+        case .getCardLanguage(let url):
+            return "/cards/\(url)"
         }
     }
 
@@ -30,12 +33,16 @@ extension RepositoriesNetworking: TargetType {
         switch self {
         case .getCards:
             return .get
+        case .getCardLanguage:
+            return .get
         }
     }
 
     var task: Task {
         switch self {
         case .getCards:
+            return .requestPlain
+        case .getCardLanguage:
             return .requestPlain
         }
     }
