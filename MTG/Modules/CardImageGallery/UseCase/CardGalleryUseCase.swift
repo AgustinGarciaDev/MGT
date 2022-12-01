@@ -8,7 +8,7 @@
 import Foundation
 
 class CardGalleryUseCase: CardGalleryUseCaseProtocol {
-    
+   
     let api: RepositoriesAPIProtocol
 
     init(api: RepositoriesAPIProtocol) {
@@ -21,4 +21,9 @@ class CardGalleryUseCase: CardGalleryUseCaseProtocol {
         }
     }
     
+    func nextPage(url: String, completionHandler: @escaping (Result<CardsDataModel, NSError>) -> Void) {
+        api.nextPage(url: url) { response in
+            completionHandler(response)
+        }
+    }
 }

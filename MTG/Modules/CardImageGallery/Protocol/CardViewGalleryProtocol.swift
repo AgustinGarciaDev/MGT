@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CardGalleryViewUpdatedProtocol {
-    func listCards(_ cards: [CardModel?])
+    func listCards(_ cards: [CardModel?], nextPage: String?)
 }
 
 protocol CardGalleryViewModelProtocol {
@@ -16,8 +16,12 @@ protocol CardGalleryViewModelProtocol {
     var coordinator: CardGalleryCoordinator? {get set}
     func searchCard(name: String)
     func navigateToShowCardInformation(card: CardModel)
+    func nextPage(_ url: String)
+
 }
 
 protocol CardGalleryUseCaseProtocol {
     func searchCard(nameCard: String, completionHandler: @escaping (Result<CardsDataModel, NSError>) -> Void)
+    
+    func nextPage(url: String, completionHandler: @escaping (Result<CardsDataModel, NSError>) -> Void)
 }

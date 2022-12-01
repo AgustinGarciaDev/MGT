@@ -8,7 +8,7 @@
 import Foundation
 
 class CardGalleryViewModel: CardGalleryViewModelProtocol {
-    
+ 
     var coordinator: CardGalleryCoordinator?
     var view: CardGalleryViewUpdatedProtocol?
     
@@ -23,7 +23,21 @@ class CardGalleryViewModel: CardGalleryViewModelProtocol {
             guard let self = self else {return}
             switch response {
             case .success(let cards):
-                self.view?.listCards(cards.data)
+                self.view?.listCards(cards.data, nextPage: cards.nextPage)
+            case .failure:
+                print("ERROR")
+            }
+        }
+    }
+    
+    func nextPage(_ url: String) {
+        let urlFinal = String(url.suffix(133))
+
+        useCase.nextPage(url: urlFinal) { [weak self] response in
+            guard let self = self else {return}
+            switch response {
+            case .success(let cards):
+                self.view?.listCards(cards.data, nextPage: cards.nextPage)
             case .failure:
                 print("ERROR")
             }

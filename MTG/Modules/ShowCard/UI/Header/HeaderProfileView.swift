@@ -31,6 +31,7 @@ class HeaderProfileView: UIView {
         collectionView.delegate = self
         collectionView.register(LanguageCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.backgroundColor = .white
         return collectionView
     }()
 

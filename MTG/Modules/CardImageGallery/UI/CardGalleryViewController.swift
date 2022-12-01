@@ -12,6 +12,7 @@ class CardGalleryViewController: UIViewController {
     // MARK: Private Properties
 
     private var cardList = [CardModel?]()
+    private var nextPageInfo: String?
 
     var viewModel: CardGalleryViewModelProtocol!
 
@@ -52,7 +53,7 @@ class CardGalleryViewController: UIViewController {
     }
 
     func builHierarchy() {
-        view.backgroundColor = UIColor(named: "PrimaryColor")
+        view.backgroundColor = .white
         view.addSubViews(with: [cardListTableView])
     }
 
@@ -84,7 +85,7 @@ class CardGalleryViewController: UIViewController {
     }
 }
 
-extension CardGalleryViewController: UITableViewDelegate, UITableViewDataSource {
+extension CardGalleryViewController: UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cardList.count
@@ -107,11 +108,20 @@ extension CardGalleryViewController: UITableViewDelegate, UITableViewDataSource 
         guard let cardInfo = cardList[indexPath.row] else {return}
         viewModel.navigateToShowCardInformation(card: cardInfo)
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+           if scrollView.contentSize.height - scrollView.contentOffset.y - scrollView.frame.height < 100 {
+               guard let urlPage = nextPageInfo else {return}
+               viewModel.nextPage(urlPage)
+           }
+       }
 }
 
 extension CardGalleryViewController: CardGalleryViewUpdatedProtocol {
-    func listCards(_ cards: [CardModel?]) {
-        cardList = cards
+
+    func listCards(_ cards: [CardModel?], nextPage: String?) {
+        nextPageInfo = nextPage
+        cards.forEach({cardList.append($0)})
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             self.cardListTableView.reloadData()

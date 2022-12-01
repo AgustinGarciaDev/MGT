@@ -46,6 +46,7 @@ class CardProfileView: UIView {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(LegalitiesViewTableViewCell.self, forCellReuseIdentifier: "CardCell")
+        tableView.backgroundColor = .white
         return tableView
     }()
 
