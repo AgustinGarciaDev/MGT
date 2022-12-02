@@ -25,7 +25,7 @@ class CardGalleryViewModel: CardGalleryViewModelProtocol {
             case .success(let cards):
                 self.view?.listCards(cards.data, nextPage: cards.nextPage)
             case .failure:
-                print("ERROR")
+                self.view?.showError()
             }
         }
     }

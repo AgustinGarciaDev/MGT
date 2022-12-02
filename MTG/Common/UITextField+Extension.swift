@@ -15,7 +15,7 @@ extension UITextField {
          imageContainerView.addSubview(imageView)
          leftView = imageContainerView
          leftViewMode = .always
-         self.tintColor = .white
+         tintColor = UIColor(named: "PrimaryColor")
        }
 
 }

@@ -9,6 +9,7 @@ import Foundation
 
 protocol CardGalleryViewUpdatedProtocol {
     func listCards(_ cards: [CardModel?], nextPage: String?)
+    func showError()
 }
 
 protocol CardGalleryViewModelProtocol {

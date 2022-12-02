@@ -29,6 +29,7 @@ class CardTableViewCell: UITableViewCell {
     }
 
     private func setupView() {
+        backgroundColor = .white
         builHierarchy()
         setupConstraints()
     }

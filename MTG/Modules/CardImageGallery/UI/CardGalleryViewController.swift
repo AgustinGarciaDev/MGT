@@ -27,7 +27,7 @@ class CardGalleryViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(CardTableViewCell.self, forCellReuseIdentifier: "CardCell")
         tableView.separatorStyle = .none
-        tableView.backgroundColor = UIColor(named: "PrimaryColor")
+        tableView.backgroundColor = .white
         return tableView
     }()
 
@@ -45,7 +45,7 @@ class CardGalleryViewController: UIViewController {
         builHierarchy()
         setupConstraints()
     }
-    
+
     func configurationInitial() {
         navigationController?.navigationBar.isHidden = true
         showLoadingScreen()
@@ -71,7 +71,7 @@ class CardGalleryViewController: UIViewController {
         DispatchQueue.main.async { [weak self] in
             guard let self = self, let window = UIApplication.shared.keyWindow else { return }
             self.loadingScreen = LoadingScreen(frame: window.bounds)
-            self.loadingScreen?.backgroundColor = UIColor(named: "PrimaryColor")
+            self.loadingScreen?.backgroundColor = .white
             if let loadingScreen = self.loadingScreen {
                 window.addSubview(loadingScreen)
             }
@@ -105,27 +105,37 @@ extension CardGalleryViewController: UITableViewDelegate, UITableViewDataSource,
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let cardInfo = cardList[indexPath.row] else {return}
+        guard let cardInfo = cardList[indexPath.row] else { return }
         viewModel.navigateToShowCardInformation(card: cardInfo)
     }
-    
+
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-           if scrollView.contentSize.height - scrollView.contentOffset.y - scrollView.frame.height < 100 {
-               guard let urlPage = nextPageInfo else {return}
-               viewModel.nextPage(urlPage)
-           }
-       }
+        if scrollView.contentSize.height - scrollView.contentOffset.y - scrollView.frame.height < 100 {
+            guard let urlPage = nextPageInfo else { return }
+            viewModel.nextPage(urlPage)
+        }
+    }
 }
 
 extension CardGalleryViewController: CardGalleryViewUpdatedProtocol {
 
     func listCards(_ cards: [CardModel?], nextPage: String?) {
         nextPageInfo = nextPage
-        cards.forEach({cardList.append($0)})
+        cards.forEach({ cardList.append($0) })
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             self.cardListTableView.reloadData()
             self.hideLoadingScreen()
         }
+    }
+
+    func showError() {
+        let alert = UIAlertController(title: "Error al encontrar carta", message: "Intenta nuevamenta", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] _ in
+            self?.navigationController?.popViewController(animated: true)
+            self?.hideLoadingScreen()
+        }))
+        
+        present(alert, animated: true)
     }
 }

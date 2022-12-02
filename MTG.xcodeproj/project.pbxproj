@@ -269,7 +269,7 @@
 				EC61D8EC28ECDA8800719351 /* Network */,
 				EC20BF4E28C791FB004079EF /* Coordinators */,
 				EC61D8E128EBAFF000719351 /* Modules */,
-				EC20BF4B28C790F4004079EF /* Commos */,
+				EC20BF4B28C790F4004079EF /* Common */,
 				EC20BF1828C54CDC004079EF /* AppDelegate.swift */,
 				EC20BF2128C54CDE004079EF /* Assets.xcassets */,
 				EC20BF2328C54CDE004079EF /* LaunchScreen.storyboard */,
@@ -296,17 +296,16 @@
 			path = MGTUITests;
 			sourceTree = "<group>";
 		};
-		EC20BF4B28C790F4004079EF /* Commos */ = {
+		EC20BF4B28C790F4004079EF /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				EC9B10FA28F18C77007C589E /* MockModels */,
 				EC9B10E428F0794B007C589E /* Lottie */,
 				EC20BF4C28C79112004079EF /* CoordinatorProtocol.swift */,
 				EC89B75128CC9763002D6A6E /* UIViewController+Extension.swift */,
 				EC89B75328CCB0AE002D6A6E /* UITextField+Extension.swift */,
 				EC9B10E128F076EA007C589E /* LoadingScreen.swift */,
 			);
-			path = Commos;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		EC20BF4E28C791FB004079EF /* Coordinators */ = {
@@ -449,13 +448,6 @@
 				EC484E8728FB36E8000D7066 /* CardProfile */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		EC9B10FA28F18C77007C589E /* MockModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MockModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
