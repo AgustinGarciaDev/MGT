@@ -96,6 +96,7 @@ extension CardGalleryViewController: UITableViewDelegate, UITableViewDataSource,
                                                        for: indexPath) as? CardTableViewCell else { return UITableViewCell() }
 
         let cardInfo = cardList[indexPath.row]
+        cell.selectionStyle = .none
         cell.setImage(imageUrl: cardInfo?.imageUris?.normal ?? "")
         return cell
     }
@@ -130,12 +131,11 @@ extension CardGalleryViewController: CardGalleryViewUpdatedProtocol {
     }
 
     func showError() {
-        let alert = UIAlertController(title: "Error al encontrar carta", message: "Intenta nuevamenta", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Error finding cart", message: "Try again", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] _ in
             self?.navigationController?.popViewController(animated: true)
             self?.hideLoadingScreen()
         }))
-        
         present(alert, animated: true)
     }
 }

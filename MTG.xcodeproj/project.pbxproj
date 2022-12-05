@@ -881,7 +881,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6PTSGN23VN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MGT/Info.plist;
+				INFOPLIST_FILE = "MTGApp-Dev.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -912,7 +912,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6PTSGN23VN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MGT/Info.plist;
+				INFOPLIST_FILE = "MTGApp-Dev.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

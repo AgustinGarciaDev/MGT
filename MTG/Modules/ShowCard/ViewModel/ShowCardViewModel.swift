@@ -29,7 +29,7 @@ class ShowCardViewModel: ShowCardViewModelProtocol {
             case .success(let result):
                 self.view?.updatedImage(url: result.imageUris?.normal ?? "")
             case .failure(let error):
-                print(error)
+                self.view?.errorLoadCart()
             }
         }
     }

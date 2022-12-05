@@ -30,6 +30,7 @@ class CardProfileView: UIView {
         let label = UILabel()
         label.text = cardModel.name
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .black
         return label
     }()
 
@@ -37,6 +38,7 @@ class CardProfileView: UIView {
         let label = UILabel()
         label.text = "Illustrated by \(cardModel.artist)"
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .black
         return label
     }()
 

@@ -9,6 +9,7 @@ import UIKit
 
 protocol ShowCardViewUpdatedProtocol {
     func updatedImage(url: String)
+    func errorLoadCart()
 }
 
 class ShowCardViewController: UIViewController {
@@ -129,5 +130,11 @@ extension ShowCardViewController: HeaderDelegate, ShowCardViewUpdatedProtocol {
     func languageSelect(_ language: String) {
         let url = "\(infoCard.set)/\(infoCard.collectorNumber)/\(language.lowercased())"
         viewModel?.sendInformationLanguage(url: url)
+    }
+    
+    func errorLoadCart() {
+        let alert = UIAlertController(title: "Error finding cart", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default,handler: nil))
+        present(alert, animated: true)
     }
 }

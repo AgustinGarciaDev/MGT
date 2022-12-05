@@ -28,6 +28,7 @@ class LegalitiesViewTableViewCell: UITableViewCell {
     lazy var nameGameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .black
         return label
     }()
     
@@ -52,6 +53,7 @@ class LegalitiesViewTableViewCell: UITableViewCell {
     func setup() {
         builHierarchy()
         setupConstraints()
+        backgroundColor = .white
     }
     
     func configuration(model: LegalitiesModel) {
